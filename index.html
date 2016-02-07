@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ecoenergie</title>
+	<!-- jQuery -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
+	
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap-theme.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+		<!-- style -->
+	<link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="css/smoothness/jquery-ui.css">
+  <script src="js/jquery-ui-1.11.4/jquery-ui.js"></script>
+  <script>
+$(function() {
+    $( "#slider-range-min" ).slider({
+      range: "min",
+      value: 1,
+      min: 1,
+      max: 100,
+      slide: function( event, ui ) {
+        $( "#amount" ).html( ui.value );
+      }
+    });
+    $( "#amount" ).html( $( "#slider-range-min" ).slider( "value" ) );
+  });
+  </script>
+</head>
+<body>
+<div class="wrapper">
+	<div class="headWrapper">
+	<div class="row">
+		<div class="col-md-6 col-sm-6">
+			<img src="img/logo.png" class="imgLogo">
+			<div class="textLogo">Импортер оборудывания
+для солнечных систем</div>
+		</div>
+		<div class="col-md-4 col-sm-6 enter">
+			<div class="enter">
+				<div>Формируем дилерскую сеть</div>
+				<button class="dilerEnter">Вход для дилеров</button>
+			</div>
+
+		</div>
+		<div class="col-md-2 col-sm-6">
+			<div class="phone">
+				(067) 218-62-76
+				<br>(097) 410-05-07
+				<br>(067) 563-11-11
+				<a href="#">Перезвоните мне!</a>
+			</div>
+
+		</div>
+		</div>
+		<form class="col-md-4 col-sm-6 col-md-offset-5">
+			<button></button>
+				<input type="text" placeholder="Я ищу">
+		</form>
+		<div class="shop col-md-3 col-sm-6">
+			Корзина пуста <div class="basket"><img src="img/basket.png"></div>
+		</div>
+	</div>
+	<div class='menu'>
+		<ul>
+		    <li class="col-md-2"><a href='#'>Готовые <br>решения</a></li>
+		    <li class="col-md-2"><a href='#'>Наша <br>продукция</a></li>
+		    <li class="col-md-2"><a href='#'>Реализованные <br>проекты</a></li>
+		    <li class="col-md-2"><a href='#'>Партнеры <br>и поставщики</a></li>
+			<li class="col-md-2"><a href='#'>Полезно <br>знать</a></li>
+			<li class="col-md-2"><a href='#'>Как нас <br>найти</a></li>
+		</ul>
+	</div>
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		  <!-- Указатели -->
+
+		  <!-- Контент слайда (slider wrap)-->
+		 <div class="carousel-inner">
+		    <div class="item active">
+		      <img src="img/1.png" alt="...">
+		      <div class="carousel-caption">
+		        <div class="info ">
+				Представленные системы безопасны для природы и пользователей, высокотехнологичны, просты в установке и практически не требуют обслуживания в процессе эксплуатации. Наши инженеры окажут необходимую техническую поддержку при расчете систем.
+					<button class="bluBut">ПОДРОБНЕЕ</button>
+				</div>
+		      </div>
+		    </div>
+		   	<div class="item">
+		      <img src="img/2.png" alt="...">
+		      <div class="carousel-caption">
+		        <div class="info ">
+				Представленные системы безопасны для природы и пользователей, высокотехнологичны, просты в установке и практически не требуют обслуживания в процессе эксплуатации. Наши инженеры окажут необходимую техническую поддержку при расчете систем.
+					<button class="bluBut">ПОДРОБНЕЕ</button>
+				</div>
+		      </div>
+		    </div>
+		    <div class="item">
+		      <img src="img/1.png" alt="...">
+		      <div class="carousel-caption">
+		        <div class="info ">
+				Представленные системы безопасны для природы и пользователей, высокотехнологичны, просты в установке и практически не требуют обслуживания в процессе эксплуатации. Наши инженеры окажут необходимую техническую поддержку при расчете систем.
+					<button class="bluBut">ПОДРОБНЕЕ</button>
+				</div>
+		      </div>
+		    </div>
+		 </div>
+		  <!-- Элементы управления -->
+		 <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+		    <span class="glyphicon glyphicon-chevron-left"><img src="img/leftArrow.png"></span>
+		 </a>
+		 <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+		    <span class="glyphicon glyphicon-chevron-right"><img src="img/rightArrow.png"></span>
+		 </a>
+
+	</div>
+	<div class="container ">
+		<div class="col-md-4 col-sm-4 slideBlock" data-target="#carousel-example-generic" data-slide-to="0"><img src="img/netplant.png"> Сетевая система</div>
+		<div class="col-md-4 col-sm-4 slideBlock" data-target="#carousel-example-generic" data-slide-to="1"><img src="img/hybplant.png">Гибридная система</div>
+		<div class="col-md-4 col-sm-4 slideBlock" data-target="#carousel-example-generic" data-slide-to="2"><img src="img/autoplant.png">Гибридная система</div>
+	</div>
+	
+	<div class="main container">
+	
+		<div class="col-md-8">
+			<h3>
+				Импортер оборудования
+				и солнечных систем
+			</h1>
+			<p>
+				EcoEnergie – это крупная межрегиональная украинская компания, занимающаяся продажей солнечных батарей и модулей предназначенных для создания автономных систем энергообеспечения. Солнечные панели полностью стандартизированы, и подойдут для любых типов крыш. Предлагаемые инверторы напряжения, аккумуляторные батареи, контроллеры заряда, соединительные коннекторы и другие комплектующие, технически совместимы между собой. Грандиозные планы нашей команды о продвижении на Украине технологий возобновляемой энергетики заслуженно оценены нашими клиентами. Теперь ваш дом получил право на экологически чистую энергию солнечного света.
+			</p>
+			<div class="calcWrapper">
+				<h3>Нужна помощь?</h3>
+				<p>Воспользуйтесь калькулятором, чтобы понять, какая электростанция вам нужна.</p>
+				<div class="calc">
+					<div class="selectCalc"><img src="img/netplant.png"> Сетевая</div>
+					<div class="selectCalc"><img src="img/hybplant.png">Гибридная</div>
+					<div class="selectCalc"><img src="img/autoplant.png">Гибридная</div>
+					<div style="clear:both;"></div>
+					<div class="question">Какое Ваше среднее потребление электроэнергии в месяц?</div>
+
+					<div id="slider-range-min" ></div>
+					  <div class="consume"><span id="amount"></span> кВт/месяц</div>
+					  <div style="clear:both;"></div>
+					  <div class="result">Вам подходит станция мощностью<br><span class="">3</span> кВт/час</div>
+					<div class="resultTable">
+						<p>Рекомендована электростанция №1:</p>
+					 	<table>
+					 	<tbody>
+					 		<tr class="trBg">
+					 			<td>1</td>
+					 			<td><a href="#">Солнечная батарея</a></td>
+					 			<td>15 кВт</td>
+					 			<td>15 $</td>
+					 		</tr>
+					 		<tr >
+					 			<td>2</td>
+					 			<td><a href="#">Контроллер заряда</a></td>
+					 			<td>220 В</td>
+					 			<td>1100 $</td>
+					 		</tr>
+					 		<tr class="trBg">
+					 			<td>3</td>
+					 			<td><a href="#">Коннектор</a></td>
+					 			<td>3 шт</td>
+					 			<td>150 $</td>
+					 		</tr>
+					 		<tr>
+					 			<td>4</td>
+					 			<td><a href="#">Сетевой инвертор</a></td>
+					 			<td>450 К</td>
+					 			<td>250 $</td>
+					 		</tr>
+					 		<tr class="trBg">
+					 			<td>5</td>
+					 			<td><a href="#">Аккумкляторная батарея</a></td>
+					 			<td>3000 А</td>
+					 			<td>8 000 $ </td>
+					 		</tr>
+					 		</tbody>
+					 	</table>
+					 	<a href="#" class="plantLink">Подробнее о станции >></a>
+					</div>
+					<div class="pricePlant">Цена станции: <span>15 000 $</span></div>
+					<button class="bluBut">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-4">
+			<a href="#">Все акции и скидки >></a>
+			<div class="oneItem">
+				<div class="imgItem">
+					<img src="img/1.png">
+				</div>
+				<div class="infoItem">
+				Солнечная батарея YINGLI 310Вт / 24В (поликристаллическая) YL310P-35b
+				<br>
+				
+				</div>
+				<span class="oldPrice">320$</span><span class="newPrice">300$</span>
+				<div></div>
+					<button class="bluBut">ПОДРОБНЕЕ</button>
+			</div>
+			<div class="artic">
+				<div class="title">Как выбрать солнечну батарею?</div>
+				<div class="text">Солнечные панели полностью стандартизированы, и подойдут для любых типов крыш. Предлагаемые инверторы напряжения, аккумуляторные батареи, контроллеры заряда, соединительные коннекторы и другие комплектующие, технически совместимы между собой. Грандиозные планы нашей команды о продвижении на Украине технологий возобновляемой энергетики заслуженно оценены нашими клиентами. Теперь ваш дом получил право на экологически чистую энергию солнечного света.</div>
+				<a href="#">Читать дальше >></a>
+			</div>
+			<div class="artic">
+				<div class="title">Как выбрать солнечну батарею?</div>
+				<div class="text">Солнечные панели полностью стандартизированы, и подойдут для любых типов крыш. Предлагаемые инверторы напряжения, аккумуляторные батареи, контроллеры заряда, соединительные коннекторы и другие комплектующие, технически совместимы между собой. Грандиозные планы нашей команды о продвижении на Украине технологий возобновляемой энергетики заслуженно оценены нашими клиентами. Теперь ваш дом получил право на экологически чистую энергию солнечного света.</div>
+				<a href="#">Читать дальше >></a>
+			</div>
+		</div>
+		</div>
+		
+
+		<div class="footer row">
+			<div class="col-md-4 product">
+			<a href="#">Товары отдельно</a>
+				<ul >
+					<li><a href="#">Солнечные батареи</a></li>
+					<li><a href="#">Аккумкляторные батареи</a></li>
+					<li><a href="#">Сетевые инверторы</a></li>
+					<li><a href="#">Автономные инверторы</a></li>
+					<li><a href="#">Контролеры заряда</a></li>
+					<li><a href="#">Соеденительные коннекторы</a></li>
+				</ul>
+				<a href="#">Готовые решения</a>
+				<a href="#">Акции и скидки</a>
+			</div>
+			<div class="col-md-4">
+				<form class="contactUs">
+					<input type="text" size="20" placeholder="NAmw">
+					<input type="text" size="20" placeholder="NAmw">
+					<input type="text" size="20" placeholder="NAmw">
+					<textarea placeholder="NAmw"></textarea> 
+					<button class="bluBut">ОТПРАВИТЬ</button>
+				</form>
+			</div>
+			<div class="col-md-4">
+				<img src="img/logo.png" class="imgLogo">
+				<span class="phone">(067) 563-11-11 <br> (067) 218-62-76</span>
+
+				<span class="location">Киево-Святошинский р-н, г. Вишневое, ул. Остапа Вишни 1,  </span>
+				<form class="search">
+					<input type="text" size="20" placeholder="Я ищу...">
+					<div><img src="img/search2.png"></div>
+				</form>
+			</div>
+
+
+
+	
+</div>
+</div>
+</body>
+</html>

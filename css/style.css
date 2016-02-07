@@ -1,0 +1,429 @@
+body{
+	background-image: url(../img/mainbg.png);
+}
+.container{
+	max-width: 950px;
+	margin: 0 auto;
+	padding: 0;
+}
+.wrapper{
+	max-width: 1110px;
+	margin: 0 auto;
+	height: 461px;
+	background-image: url(../img/menubg.png);
+	background-repeat: no-repeat;
+}
+.headWrapper{
+	max-width: 950px;
+	margin: 0 auto;
+	padding-top: 15px;
+}
+.imgLogo{
+	margin-left: 30px;
+	width: 260px;
+}
+.textLogo{
+	color: rgba(255, 255, 255, 1);
+	width: 170px;
+	font-size: 14px;
+	margin-left: 160px;
+
+}
+.enter{
+	text-align: center;
+}
+.dilerEnter{
+	width: 220px;
+	height: 40px;
+	border-radius: 4px;
+	color: rgba(255, 255, 255, 1);
+	background-color: #c5e19d;
+	border: 0;
+	outline: none;
+	font-size: 14px;
+	font-weight: bold;
+	  background: #bfdba7;
+  background: -webkit-linear-gradient(bottom, #b2d495, #cce2b9);
+  background: -ms-linear-gradient(bottom, #b2d495, #cce2b9);
+  background: -moz-linear-gradient(bottom, #b2d495, #cce2b9);
+  background: -o-linear-gradient(bottom, #b2d495, #cce2b9);
+  background: linear-gradient(to top, #b2d495, #cce2b9);
+
+}
+.phone{
+	font-size: 12px;
+    font-weight: bolder;
+	float: right;
+}
+.headWrapper input{
+    border: 0;
+    top: -5px;
+    position: relative;
+    background: inherit;
+    border-bottom: 1px solid;
+    outline: none;
+    margin-left: 5px;
+}
+.headWrapper form button{
+	background: inherit;
+	outline: none;
+	width: 17px;
+    height: 16px;
+	border: 0;
+	background-image: url(../img/search1.png);
+}
+.headWrapper .basket{
+
+	background: #165060;
+	padding: 15px;
+	border-radius: 100%;
+	float: right;
+    position: relative;
+    top: -15px;
+    left: -50px;
+
+}
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+.menu,
+.menu ul,
+.menu ul li,
+.menu ul li a,
+.menu #menu-button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.menu:after,
+.menu > ul:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+
+}
+.menu {
+  width: auto;
+  border-radius: 4px;
+  border: 1px solid #98c571;
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1;
+  background: #bfdba7;
+  background: -webkit-linear-gradient(bottom, #b2d495, #cce2b9);
+  background: -ms-linear-gradient(bottom, #b2d495, #cce2b9);
+  background: -moz-linear-gradient(bottom, #b2d495, #cce2b9);
+  background: -o-linear-gradient(bottom, #b2d495, #cce2b9);
+  background: linear-gradient(to top, #b2d495, #cce2b9);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), inset 0 -2px 0px #aacf8a, inset 0 1px 0 #d4e7c4;
+  max-width: 950px;
+  margin: 0 auto;
+  margin-top: 55px;
+  text-align: center;
+
+}
+.menu ul li {
+	    padding: 15px 0;
+	    border-right: 2px solid #fff;
+}
+.menu ul li:last-of-type {
+	    border-right: 0px solid #fff;
+}
+.menu ul li a{
+	color: #333;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 14px;
+}
+.menu ul li:hover{
+	background: #d4eac1;
+}
+.bluBut{
+	color: #fff;
+	border: 0;
+	outline: none;
+	float: right;
+	width: 180px;
+	height: 40px;
+	border-radius:4px;
+	margin-top: 40px;
+	background: #bfdba7;
+  	background: -webkit-linear-gradient(bottom, #024150, #2b6072);
+  	background: -ms-linear-gradient(bottom, #024150, #2b6072);
+  	background: -moz-linear-gradient(bottom, #024150, #2b6072);
+  	background: -o-linear-gradient(bottom, #024150, #2b6072);
+  	background: linear-gradient(to top, #024150, #2b6072);
+  	letter-spacing: 1px;
+
+}
+.carousel{
+	max-width: 950px;
+	margin: 0 auto;
+}
+.glyphicon-chevron-left{
+	left: -30px !important;
+
+}
+.glyphicon-chevron-right{
+	right: -30px !important;
+}
+.glyphicon-chevron-left:before, .glyphicon-chevron-right:before{
+	content: none;
+}
+.slideBlock{
+	background: #c8e199;
+	max-height: 100px;
+	padding: 30px 60px;
+}
+.slideBlock:hover{
+	background: #daeabb;
+}
+.oneItem{
+	background: #c8e199;
+	text-align: center;
+}
+.imgItem img{
+	width: 100%
+}
+.infoItem{
+	padding: 20px;
+	text-align: center;
+}
+.oldPrice{
+	text-decoration:line-through;
+	font-size: 19px;
+
+}
+.newPrice{
+	color: #00404e;
+	font-size: 24px;
+	    margin-left: 10px;
+}
+.oneItem .bluBut{
+	float: none;
+	margin: 20px
+}
+.main{
+	padding-top: 25px;
+}
+.calcWrapper{
+
+}
+.calc{
+	max-width: 550px;
+	margin: 40px auto;
+	background: #fff;
+}
+.selectCalc{
+	float: left;
+	background: #c8e199; 
+	border-right: 1px solid #fff;
+	padding:5px 35px;
+	width: 33.3%;
+	
+}
+.question{
+	margin:30px 20px;
+}
+.sliderCalc{
+	
+}
+.ui-slider{
+	max-width: 367px;
+	margin-left: 20px;
+	background: #acacac !important;
+	border-radius: 0 !important;
+	margin-top: 20px !important;
+}
+.ui-widget-header{
+	background: #bfdba7 ;
+  	background: -webkit-linear-gradient(bottom, #b2d495, #cce2b9) !important;
+  	background: -ms-linear-gradient(bottom, #b2d495, #cce2b9) !important;
+  	background: -moz-linear-gradient(bottom, #b2d495, #cce2b9) !important;
+  	background: -o-linear-gradient(bottom, #b2d495, #cce2b9) !important;
+  	background: linear-gradient(to top, #b2d495, #cce2b9) !important;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+	border-radius: 100%;
+	background-image:url(../img/scroll.png) !important;
+	  width: 30px !important; 
+    top: -10px !important;
+    height: 30px !important;
+    outline: none;
+}
+#amount{font-size: 24px; color: #c8e199; }
+.consume{
+    float: right;
+    left: -30px;
+    top: -22px;
+    position: relative;
+}
+.result{
+	
+	text-align: center;
+}
+.result span{
+	font-size: 30px;
+	color: #00404e;
+	font-weight: bold;
+}
+.resultTable{
+	margin: 45px auto; 
+	border: 1px solid #c8e199;
+	max-width: 500px;
+	    margin-bottom: 15px;
+}
+.resultTable p{
+	margin: 15px;
+	font-size: 15px;
+}
+.resultTable table{
+	width: 100%;
+	margin:20px 0;
+}
+.resultTable table tr{
+	line-height: 20px;
+	text-align:left;
+}
+.trBg{
+	background: #e9f6e2;
+}
+.resultTable table tr td:first-of-type{
+	text-align: right;
+	padding: 0 15px;
+}
+.plantLink{
+	color: #c8e199;
+	margin:15px 15px;
+	display: block;
+}
+.pricePlant{
+	float: right;
+    margin-right: 25px;
+    font-size: 16px;
+}
+.pricePlant span{
+	font-size: 17px;
+	font-weight: bold;
+}
+.calc .bluBut{
+	float: none;
+	width: 250px;
+	margin: 40px 25%;
+	
+}
+.footer{
+	padding-top: 30px;
+	background: #363636;
+	max-width:950px;
+	margin: 40px auto;
+	margin-bottom: 0;
+	
+	color: #b7b7b7;
+
+}
+.product a{
+	display: block;
+	margin-bottom: 10px;
+	color: #fff;
+	font-weight: bold;
+}
+.contactUs {
+	margin: 0 auto;
+    max-width: 230px;
+}
+.footer input::-webkit-input-placeholder {color:#6a6a6a;}
+.footer input::-moz-placeholder {color:#6a6a6a;} .footer input:-moz-placeholder {color:#6a6a6a;}
+.footer input:-ms-input-placeholder {color:#6a6a6a;} .footer textarea::-webkit-input-placeholder {color:#6a6a6a;}
+.footer textarea::-moz-placeholder {color:#6a6a6a;} .footer textarea:-moz-placeholder {color:#6a6a6a;}
+.footer textarea:-ms-input-placeholder  {color:#6a6a6a;}
+
+.contactUs input,.contactUs textarea{
+	margin-bottom: 10px;
+	outline: none;
+	background: #c6c6c6;
+	border: 0;
+	width: 100%;
+	max-width: 230px;
+	height: 30px;
+	padding:10px;
+	color: #000;
+
+}
+.contactUs textarea{
+	height: 60px;
+}
+.contactUs .bluBut{
+    float: none;
+    max-width: 179px;
+    margin: 0 auto;
+    display: block;
+}
+.footer .product{
+	padding: 0 20px;
+}
+.footer .product ul{
+	list-style-type: none;
+	padding: 0;
+}
+.footer .product ul a{
+	margin-bottom: 5px; 
+	color: #b7b7b7;
+	font-weight: bold;
+}
+.footer .phone{
+	float: none;
+	font-size: 14px;
+}
+.footer .imgLogo{
+	margin: 0
+}
+.footer .location{
+	display: block;
+	margin-bottom: 10px;
+}
+.footer .search input{
+	outline: none;
+	background: #c6c6c6;
+	border: 0;
+	float: left;
+	max-width: 180px;
+	color: #000;
+	padding:10px;
+	height: 39px;
+}
+.footer .search div{
+	float: right;
+	background: #bfdba7;
+  	background: -webkit-linear-gradient(bottom, #024150, #2b6072);
+  	background: -ms-linear-gradient(bottom, #024150, #2b6072);
+  	background: -moz-linear-gradient(bottom, #024150, #2b6072);
+  	background: -o-linear-gradient(bottom, #024150, #2b6072);
+  	background: linear-gradient(to top, #024150, #2b6072);	
+	padding: 10px 15px;
+	position: relative;
+    left: -58px;
+}
+.artic .title{
+	font-size: 16px;
+	font-weight: bold;
+	color: #00404e;
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+.artic{
+	text-align: left;
+
+}
+.artic a{
+	display: block;
+	text-align: right;
+	color:#00404e;
+}
