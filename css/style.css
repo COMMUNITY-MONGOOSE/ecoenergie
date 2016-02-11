@@ -1,5 +1,12 @@
+
+
+@import url(https://fonts.googleapis.com/css?family=Play:700);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
 body{
 	background-image: url(../img/mainbg.png);
+	font-family: 'PT Sans', sans-serif;
+	overflow-x:hidden;
+
 }
 .container{
 	max-width: 950px;
@@ -7,16 +14,17 @@ body{
 	padding: 0;
 }
 .wrapper{
-	max-width: 1110px;
-	margin: 0 auto;
-	height: 461px;
-	background-image: url(../img/menubg.png);
-	background-repeat: no-repeat;
+	background-color: #fff;
+}
+.gg{
+	position: absolute;
+	    margin-left: -450px;
+	
 }
 .headWrapper{
 	max-width: 950px;
 	margin: 0 auto;
-	padding-top: 15px;
+	overflow: hidden;
 }
 .imgLogo{
 	margin-left: 30px;
@@ -24,15 +32,22 @@ body{
 }
 .textLogo{
 	color: rgba(255, 255, 255, 1);
-	width: 170px;
+	width: 190px;
 	font-size: 14px;
-	margin-left: 160px;
-
+	margin-left: 30%;
+	letter-spacing: 1px;
 }
 .enter{
 	text-align: center;
+	margin-top: 20px;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-family: 'Play', sans-serif;
 }
 .dilerEnter{
+	font-family: 'Play', sans-serif;
+	text-transform: uppercase;
+	margin-top: 5px;
 	width: 220px;
 	height: 40px;
 	border-radius: 4px;
@@ -53,9 +68,16 @@ body{
 .phone{
 	font-size: 12px;
     font-weight: bolder;
-	float: right;
+	margin-top: 20px;
+	font-family: 'Play', sans-serif;
 }
-.headWrapper input{
+.headTool{
+	margin-top: 30px;
+	max-width: 950px;
+	margin: 0px auto;
+	
+}
+.headTool input,.headWrapper input{
     border: 0;
     top: -5px;
     position: relative;
@@ -63,8 +85,9 @@ body{
     border-bottom: 1px solid;
     outline: none;
     margin-left: 5px;
+    margin:20px 0;
 }
-.headWrapper form button{
+.headTool form button,.headWrapper form button{
 	background: inherit;
 	outline: none;
 	width: 17px;
@@ -72,16 +95,23 @@ body{
 	border: 0;
 	background-image: url(../img/search1.png);
 }
-.headWrapper .basket{
+.headTool .basket{
 
 	background: #165060;
 	padding: 15px;
 	border-radius: 100%;
 	float: right;
-    position: relative;
+	position: absolute;
     top: -15px;
-    left: -50px;
+    left: 150px;
 
+}
+.headTool .shop {
+	font-family: 'Play', sans-serif;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
 }
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
 .menu,
@@ -125,7 +155,7 @@ body{
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), inset 0 -2px 0px #aacf8a, inset 0 1px 0 #d4e7c4;
   max-width: 950px;
   margin: 0 auto;
-  margin-top: 55px;
+  font-family: 'Play', sans-serif;
   text-align: center;
 
 }
@@ -145,7 +175,52 @@ body{
 .menu ul li:hover{
 	background: #d4eac1;
 }
+#cssmenu #menu-button {
+    display: none;
+}
+#cssmenu.small-screen #menu-button {
+    display: block;
+    padding: 16px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+      background: #bfdba7;
+  background: -webkit-linear-gradient(bottom, #b2d495, #cce2b9);
+  background: -ms-linear-gradient(bottom, #b2d495, #cce2b9);
+  background: -moz-linear-gradient(bottom, #b2d495, #cce2b9);
+  background: -o-linear-gradient(bottom, #b2d495, #cce2b9);
+  background: linear-gradient(to top, #b2d495, #cce2b9);
+}
+#cssmenu.small-screen #menu-button:before {
+    content: "";
+    position: absolute;
+    right: 50%;
+    top: 21px;
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: #ffffff;
+
+}
+#cssmenu.small-screen #menu-button:after {
+    content: "";
+    position: absolute;
+    right: 50%;
+    top: 11px;
+    display: block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    width: 22px;
+    height: 3px;
+}
 .bluBut{
+	font-family: 'Play', sans-serif;
 	color: #fff;
 	border: 0;
 	outline: none;
@@ -163,9 +238,18 @@ body{
   	letter-spacing: 1px;
 
 }
+
 .carousel{
 	max-width: 950px;
 	margin: 0 auto;
+}
+.carousel-caption{
+	right: 10%;
+    left: 51%;
+    padding-bottom: 90px;
+    color: #000;
+    text-shadow:none;
+    font-size: 15px;
 }
 .glyphicon-chevron-left{
 	left: -30px !important;
@@ -177,41 +261,105 @@ body{
 .glyphicon-chevron-left:before, .glyphicon-chevron-right:before{
 	content: none;
 }
+.wrpapperBlock .row{
+	margin: 0;
+}
 .slideBlock{
 	background: #c8e199;
 	max-height: 100px;
-	padding: 30px 60px;
+	font-family: 'Play', sans-serif;
+	font-size: 15px;
+	padding: 20px 0;
+    padding-left: 80px;
+	
 }
 .slideBlock:hover{
 	background: #daeabb;
+}
+.netSys{
+	background-image: url(../img/netsys.png);
+	background-repeat: no-repeat;
+	height: 35px;
+	width: 35px;
+	float: left;
+	margin: 5px;
+	margin-right: 10px;
+	
+}
+.autosys{
+	background-image: url(../img/autosys.png);
+	background-repeat: no-repeat;
+	height: 35px;
+	width: 35px;
+	float: left;
+	margin: 5px;
+	margin-right: 10px;
+}
+.hybsys{
+		background-image: url(../img/hybsys.png);
+	background-repeat: no-repeat;
+	height: 35px;
+	width: 35px;
+	float: left;
+	margin: 5px;
+	margin-right: 10px;
+
+}
+.activeImg{
+	top: -17px;
+    left: 45%;
+    position: absolute;
+    display: none;
+}
+.activeSystem{
+	background-color: #000;
+	background-position: ;
 }
 .oneItem{
 	background: #c8e199;
 	text-align: center;
 }
+.allSales{
+	display: block;
+	text-align: right;
+	margin-bottom: 5px;
+}
+.oneItem .sale{
+	position: absolute;
+	right: 14px;
+}
 .imgItem img{
 	width: 100%
 }
 .infoItem{
-	padding: 20px;
+	padding: 30px;
 	text-align: center;
 }
 .oldPrice{
 	text-decoration:line-through;
-	font-size: 19px;
+	font-size: 18px;
+	font-family: 'Play', sans-serif;
 
 }
 .newPrice{
 	color: #00404e;
 	font-size: 24px;
-	    margin-left: 10px;
+    margin-left: 10px;
+	font-family: 'Play', sans-serif;
 }
 .oneItem .bluBut{
 	float: none;
-	margin: 20px
+	margin: 20px;
 }
 .main{
-	padding-top: 25px;
+	
+}
+.main .desc{
+	margin-top: 20px;
+}
+.desc h3{
+	font-family: 'Play', sans-serif;
+	color: #00404e;
 }
 .calcWrapper{
 
@@ -225,8 +373,9 @@ body{
 	float: left;
 	background: #c8e199; 
 	border-right: 1px solid #fff;
-	padding:5px 35px;
+	padding-left: 10px;
 	width: 33.3%;
+	line-height: 53px;
 	
 }
 .question{
@@ -236,8 +385,9 @@ body{
 	
 }
 .ui-slider{
-	max-width: 367px;
+	max-width: 360px;
 	margin-left: 20px;
+	margin-right: 30px;
 	background: #acacac !important;
 	border-radius: 0 !important;
 	margin-top: 20px !important;
@@ -258,12 +408,19 @@ body{
     height: 30px !important;
     outline: none;
 }
-#amount{font-size: 24px; color: #c8e199; }
+.amount{font-size: 24px; color: #c8e199;font-family: 'Play', sans-serif; }
 .consume{
     float: right;
     left: -30px;
     top: -22px;
     position: relative;
+}
+.consumMob{
+	float: none;
+	position:static;
+	margin: 10px 105px;
+	
+
 }
 .result{
 	
@@ -273,6 +430,7 @@ body{
 	font-size: 30px;
 	color: #00404e;
 	font-weight: bold;
+	font-family: 'Play', sans-serif;
 }
 .resultTable{
 	margin: 45px auto; 
@@ -312,11 +470,12 @@ body{
 .pricePlant span{
 	font-size: 17px;
 	font-weight: bold;
+	font-family: 'Play', sans-serif;
 }
 .calc .bluBut{
 	float: none;
-	width: 250px;
-	margin: 40px 25%;
+	width: 260px;
+	margin: 40px 10%;
 	
 }
 .footer{
@@ -325,7 +484,6 @@ body{
 	max-width:950px;
 	margin: 40px auto;
 	margin-bottom: 0;
-	
 	color: #b7b7b7;
 
 }
@@ -336,7 +494,7 @@ body{
 	font-weight: bold;
 }
 .contactUs {
-	margin: 0 auto;
+	
     max-width: 230px;
 }
 .footer input::-webkit-input-placeholder {color:#6a6a6a;}
@@ -367,7 +525,7 @@ body{
     display: block;
 }
 .footer .product{
-	padding: 0 20px;
+	padding: 0 0px;
 }
 .footer .product ul{
 	list-style-type: none;
@@ -408,8 +566,8 @@ body{
   	background: -o-linear-gradient(bottom, #024150, #2b6072);
   	background: linear-gradient(to top, #024150, #2b6072);	
 	padding: 10px 15px;
-	position: relative;
-    left: -58px;
+	position: absolute;
+    left: 188px;
 }
 .artic .title{
 	font-size: 16px;
@@ -417,13 +575,21 @@ body{
 	color: #00404e;
 	margin-top: 40px;
 	margin-bottom: 10px;
+	font-family: 'Play', sans-serif;
 }
 .artic{
 	text-align: left;
+	font-family: 'PT Sans', sans-serif;
 
 }
 .artic a{
 	display: block;
 	text-align: right;
 	color:#00404e;
+	font-family: 'PT Sans', sans-serif;
 }
+.footerWrapper{
+	background: #363636;
+	width: 100%
+}
+

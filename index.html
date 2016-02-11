@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>ecoenergie</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- jQuery -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 
@@ -18,65 +19,67 @@
 
   <link rel="stylesheet" href="css/smoothness/jquery-ui.css">
   <script src="js/jquery-ui-1.11.4/jquery-ui.js"></script>
-  <script>
-$(function() {
-    $( "#slider-range-min" ).slider({
-      range: "min",
-      value: 1,
-      min: 1,
-      max: 100,
-      slide: function( event, ui ) {
-        $( "#amount" ).html( ui.value );
-      }
-    });
-    $( "#amount" ).html( $( "#slider-range-min" ).slider( "value" ) );
-  });
+  <script src="js/main.js">
+
   </script>
 </head>
 <body>
 <div class="wrapper">
-	<div class="headWrapper">
-	<div class="row">
-		<div class="col-md-6 col-sm-6">
+	
+	<div class="headWrapper ">
+	<img class="gg" src="img/menubg.png">
+		<div class="row">
+		<div class="col-md-6 col-xs-12 col-sm-6">
 			<img src="img/logo.png" class="imgLogo">
 			<div class="textLogo">Импортер оборудывания
-для солнечных систем</div>
+			для солнечных систем</div>
 		</div>
-		<div class="col-md-4 col-sm-6 enter">
+		<div class="col-md-4 col-xs-12 col-md-offset-0 col-sm-6">
 			<div class="enter">
 				<div>Формируем дилерскую сеть</div>
 				<button class="dilerEnter">Вход для дилеров</button>
 			</div>
+		</div>
 
-		</div>
-		<div class="col-md-2 col-sm-6">
-			<div class="phone">
-				(067) 218-62-76
-				<br>(097) 410-05-07
-				<br>(067) 563-11-11
-				<a href="#">Перезвоните мне!</a>
-			</div>
-
-		</div>
-		</div>
-		<form class="col-md-4 col-sm-6 col-md-offset-5">
+		<div class=" col-md-2 col-sm-6 col-xs-5 col-xs-offset-3 col-md-offset-0 col-sm-offset-0   ">
+		<form class="visible-sm" style="float: left;margin-top: 45px; margin-right:20px;">
 			<button></button>
 				<input type="text" placeholder="Я ищу">
 		</form>
-		<div class="shop col-md-3 col-sm-6">
+			<div class="phone">
+				(067) 218-62-76
+				<br>(097) 410-05-07
+				<br>(067) 563-11-11<br>
+				<a href="#">Перезвоните мне!</a>
+			</div>
+		</div>
+		</div>
+
+	</div>
+	</div>
+	<div class="row headTool">
+		<form class=" col-md-4 col-xs-12 col-xs-offset-2 col-md-offset-5 col-sm-offset-6 hidden-sm">
+			<button></button>
+				<input type="text" placeholder="Я ищу">
+		</form>
+		<div class="shop col-md-3 col-xs-12 col-xs-offset-2 col-sm-offset-6 col-md-offset-0">
 			Корзина пуста <div class="basket"><img src="img/basket.png"></div>
 		</div>
-	</div>
-	<div class='menu'>
+		</div>
+		
+	<div class='menu ' id="cssmenu">
 		<ul>
-		    <li class="col-md-2"><a href='#'>Готовые <br>решения</a></li>
-		    <li class="col-md-2"><a href='#'>Наша <br>продукция</a></li>
-		    <li class="col-md-2"><a href='#'>Реализованные <br>проекты</a></li>
-		    <li class="col-md-2"><a href='#'>Партнеры <br>и поставщики</a></li>
-			<li class="col-md-2"><a href='#'>Полезно <br>знать</a></li>
-			<li class="col-md-2"><a href='#'>Как нас <br>найти</a></li>
+		    <li class="col-md-2 col-sm-2"><a href='#'>Готовые <br>решения</a></li>
+		    <li class="col-md-2 col-sm-2"><a href='#'>Наша <br>продукция</a></li>
+		    <li class="col-md-2 col-sm-2"><a href='#'>Реализованные <br>проекты</a></li>
+		    <li class="col-md-2 col-sm-2"><a href='#'>Партнеры <br>и поставщики</a></li>
+			<li class="col-md-2 col-sm-2"><a href='#'>Полезно <br>знать</a></li>
+			<li class="col-md-2 col-sm-2"><a href='#'>Как нас <br>найти</a></li>
 		</ul>
 	</div>
+
+<div class="main container">
+
 	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 		  <!-- Указатели -->
 
@@ -119,14 +122,21 @@ $(function() {
 		 </a>
 
 	</div>
-	<div class="container ">
-		<div class="col-md-4 col-sm-4 slideBlock" data-target="#carousel-example-generic" data-slide-to="0"><img src="img/netplant.png"> Сетевая система</div>
-		<div class="col-md-4 col-sm-4 slideBlock" data-target="#carousel-example-generic" data-slide-to="1"><img src="img/hybplant.png">Гибридная система</div>
-		<div class="col-md-4 col-sm-4 slideBlock" data-target="#carousel-example-generic" data-slide-to="2"><img src="img/autoplant.png">Гибридная система</div>
+	<div class="wrpapperBlock">
+		<div class="row ">
+			<div class="col-md-4 col-sm-4 slideBlock" data-target="#carousel-example-generic" data-slide-to="0">
+			<img class="activeImg" src="img/activeslide.png">
+			<div class="netSys"></div>Сетевая <br> система</div>
+			<div class="col-md-4 col-sm-4 slideBlock" data-target="#carousel-example-generic" data-slide-to="1">
+			<img class="activeImg" src="img/activeslide.png">
+			<div class="autosys"></div>Гибридная <br> система</div>
+			<div class="col-md-4 col-sm-4 slideBlock" data-target="#carousel-example-generic" data-slide-to="2">
+			<img class="activeImg" src="img/activeslide.png">
+			<div class="hybsys"></div>Автономная <br> система</div>
+		</div>
 	</div>
 	
-	<div class="main container">
-	
+		<div class="row desc">
 		<div class="col-md-8">
 			<h3>
 				Импортер оборудования
@@ -139,15 +149,16 @@ $(function() {
 				<h3>Нужна помощь?</h3>
 				<p>Воспользуйтесь калькулятором, чтобы понять, какая электростанция вам нужна.</p>
 				<div class="calc">
-					<div class="selectCalc"><img src="img/netplant.png"> Сетевая</div>
-					<div class="selectCalc"><img src="img/hybplant.png">Гибридная</div>
-					<div class="selectCalc"><img src="img/autoplant.png">Гибридная</div>
+					<div class="selectCalc"><div class="netSys hidden-xs"></div> Сетевая</div>
+					<div class="selectCalc"><div class="autosys hidden-xs"></div>Гибридная</div>
+					<div class="selectCalc"><div class="hybsys hidden-xs"></div>Гибридная</div>
 					<div style="clear:both;"></div>
 					<div class="question">Какое Ваше среднее потребление электроэнергии в месяц?</div>
 
 					<div id="slider-range-min" ></div>
-					  <div class="consume"><span id="amount"></span> кВт/месяц</div>
+					  <div class="consume hidden-xs"><span class="amount"></span> кВт/месяц</div>
 					  <div style="clear:both;"></div>
+					  <div class="consume consumMob visible-xs"><span class="amount"></span> кВт/месяц</div>
 					  <div class="result">Вам подходит станция мощностью<br><span class="">3</span> кВт/час</div>
 					<div class="resultTable">
 						<p>Рекомендована электростанция №1:</p>
@@ -188,14 +199,15 @@ $(function() {
 					 	<a href="#" class="plantLink">Подробнее о станции >></a>
 					</div>
 					<div class="pricePlant">Цена станции: <span>15 000 $</span></div>
-					<button class="bluBut">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+					<button class="bluBut col-md-10 col-xs-5">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
 				</div>
 			</div>
 		</div>
 
 		<div class="col-md-4">
-			<a href="#">Все акции и скидки >></a>
+			<a class="allSales" href="#">Все акции и скидки >></a>
 			<div class="oneItem">
+			<img class="sale" src="img/sale.png">
 				<div class="imgItem">
 					<img src="img/1.png">
 				</div>
@@ -219,11 +231,15 @@ $(function() {
 				<a href="#">Читать дальше >></a>
 			</div>
 		</div>
-		</div>
-		
+	</div>
+</div>		
 
-		<div class="footer row">
-			<div class="col-md-4 product">
+
+<div style="clear:both;"></div>
+	<div class="footerWrapper">
+		<div class="footer">
+		<div class="row">
+			<div class="col-md-4 col-xs-10 col-xs-offset-2 col-sm-offset-4 col-md-offset-0 product">
 			<a href="#">Товары отдельно</a>
 				<ul >
 					<li><a href="#">Солнечные батареи</a></li>
@@ -236,7 +252,7 @@ $(function() {
 				<a href="#">Готовые решения</a>
 				<a href="#">Акции и скидки</a>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 col-xs-10 col-xs-offset-1 col-sm-offset-4 col-md-offset-0">
 				<form class="contactUs">
 					<input type="text" size="20" placeholder="NAmw">
 					<input type="text" size="20" placeholder="NAmw">
@@ -245,21 +261,20 @@ $(function() {
 					<button class="bluBut">ОТПРАВИТЬ</button>
 				</form>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 col-xs-10 col-xs-offset-1 col-sm-offset-4 col-md-offset-0">
 				<img src="img/logo.png" class="imgLogo">
-				<span class="phone">(067) 563-11-11 <br> (067) 218-62-76</span>
+				<span class="phone"><br>(067) 563-11-11 <br> (067) 218-62-76</span>
 
 				<span class="location">Киево-Святошинский р-н, г. Вишневое, ул. Остапа Вишни 1,  </span>
 				<form class="search">
 					<input type="text" size="20" placeholder="Я ищу...">
 					<div><img src="img/search2.png"></div>
 				</form>
+				<div style="margin-top:60px;margin-bottom:10px;">TQG</div>
 			</div>
+			</div>	
+		</div>
+	</div>
 
-
-
-	
-</div>
-</div>
 </body>
 </html>
