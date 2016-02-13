@@ -1,11 +1,24 @@
 
 
-@import url(https://fonts.googleapis.com/css?family=Play:700);
+
 @import url(https://fonts.googleapis.com/css?family=PT+Sans);
+@import url(https://fonts.googleapis.com/css?family=Play:400,700);
+
 body{
 	background-image: url(../img/mainbg.png);
 	font-family: 'PT Sans', sans-serif;
 	overflow-x:hidden;
+
+}
+.popupback{
+	background-color: rgba(255, 255, 255, 0.3);
+	background: rgba(255, 255, 255, 0.3);
+	color: rgba(255, 255, 255, 0.3);
+	width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.popup{
 
 }
 .container{
@@ -18,8 +31,12 @@ body{
 }
 .gg{
 	position: absolute;
-	    margin-left: -450px;
+	margin-left: -417px;
 	
+}
+.log{
+	position: absolute;
+	margin-top: 20px;
 }
 .headWrapper{
 	max-width: 950px;
@@ -33,16 +50,20 @@ body{
 .textLogo{
 	color: rgba(255, 255, 255, 1);
 	width: 190px;
-	font-size: 14px;
+	font-size: 15px;
 	margin-left: 30%;
 	letter-spacing: 1px;
+	line-height: 16px;
+    margin-top: -10px;
 }
 .enter{
+	position: absolute;
 	text-align: center;
-	margin-top: 20px;
-	text-transform: uppercase;
+	margin-top: 10px;
 	font-size: 13px;
 	font-family: 'Play', sans-serif;
+	margin-left: 122px;
+	font-weight: bold;
 }
 .dilerEnter{
 	font-family: 'Play', sans-serif;
@@ -66,10 +87,11 @@ body{
 
 }
 .phone{
-	font-size: 12px;
+	font-size: 14px;
     font-weight: bolder;
-	margin-top: 20px;
+	margin-top: 7px;
 	font-family: 'Play', sans-serif;
+	
 }
 .headTool{
 	margin-top: 30px;
@@ -85,33 +107,37 @@ body{
     border-bottom: 1px solid;
     outline: none;
     margin-left: 5px;
-    margin:20px 0;
+    margin: 20px 10px;
 }
 .headTool form button,.headWrapper form button{
-	background: inherit;
-	outline: none;
-	width: 17px;
+    margin-left: 63px;
+    margin-top: 25px;
+    background: inherit;
+    outline: none;
+    width: 17px;
     height: 16px;
-	border: 0;
-	background-image: url(../img/search1.png);
+    border: 0;
+    background-image: url(../img/search1.png);
 }
 .headTool .basket{
 
 	background: #165060;
-	padding: 15px;
+	padding: 12px;
 	border-radius: 100%;
 	float: right;
 	position: absolute;
-    top: -15px;
+    top: -12px;
     left: 150px;
 
 }
 .headTool .shop {
-	font-family: 'Play', sans-serif;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	letter-spacing: 1px;
-	text-transform: uppercase;
+    font-family: 'Play', sans-serif;
+    font-weight: bold;
+    margin-top: 22px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
 .menu,
@@ -142,7 +168,6 @@ body{
 }
 .menu {
   width: auto;
-  border-radius: 4px;
   border: 1px solid #98c571;
   font-family: 'Source Sans Pro', sans-serif;
   line-height: 1;
@@ -158,9 +183,10 @@ body{
   font-family: 'Play', sans-serif;
   text-align: center;
 
+
 }
 .menu ul li {
-	    padding: 15px 0;
+	    padding: 17px 0;
 	    border-right: 2px solid #fff;
 }
 .menu ul li:last-of-type {
@@ -220,6 +246,7 @@ body{
     height: 3px;
 }
 .bluBut{
+	font-size: 14px;
 	font-family: 'Play', sans-serif;
 	color: #fff;
 	border: 0;
@@ -244,13 +271,21 @@ body{
 	margin: 0 auto;
 }
 .carousel-caption{
-	right: 10%;
+    right: 8%;
+    text-align: left;
     left: 51%;
-    padding-bottom: 90px;
+    
     color: #000;
-    text-shadow:none;
-    font-size: 15px;
+    text-shadow: none;
+    line-height: 23px;
+    font-size: 18px;
 }
+.carousel-indicators .active {
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    background-color: #fff;
+    }
 .glyphicon-chevron-left{
 	left: -30px !important;
 
@@ -265,12 +300,15 @@ body{
 	margin: 0;
 }
 .slideBlock{
-	background: #c8e199;
-	max-height: 100px;
-	font-family: 'Play', sans-serif;
-	font-size: 15px;
-	padding: 20px 0;
-    padding-left: 80px;
+    background: #c8e199;
+    max-height: 100px;
+    font-family: 'Play', sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 30px 0;
+   	font-weight: bold;
+    padding-left: 9%;
+    cursor: pointer;
 	
 }
 .slideBlock:hover{
@@ -278,12 +316,13 @@ body{
 }
 .netSys{
 	background-image: url(../img/netsys.png);
-	background-repeat: no-repeat;
-	height: 35px;
-	width: 35px;
-	float: left;
-	margin: 5px;
-	margin-right: 10px;
+    background-repeat: no-repeat;
+    height: 35px;
+    width: 35px;
+    float: left;
+    margin-right: 33px;
+    margin-left: -15px;
+    margin-top: 4px;
 	
 }
 .autosys{
@@ -292,8 +331,9 @@ body{
 	height: 35px;
 	width: 35px;
 	float: left;
-	margin: 5px;
-	margin-right: 10px;
+    margin-right: 33px;
+    margin-left: -15px;
+    margin-top: 4px;
 }
 .hybsys{
 		background-image: url(../img/hybsys.png);
@@ -301,8 +341,9 @@ body{
 	height: 35px;
 	width: 35px;
 	float: left;
-	margin: 5px;
-	margin-right: 10px;
+    margin-right: 33px;
+    margin-left: -15px;
+    margin-top: 4px;
 
 }
 .activeImg{
@@ -320,9 +361,13 @@ body{
 	text-align: center;
 }
 .allSales{
-	display: block;
-	text-align: right;
-	margin-bottom: 5px;
+	color: #00404e;
+    display: block;
+    font-size: 16px;
+    text-align: right;
+    margin-bottom: 5px;
+    line-height: 28px;
+    text-decoration: underline;
 }
 .oneItem .sale{
 	position: absolute;
@@ -332,13 +377,17 @@ body{
 	width: 100%
 }
 .infoItem{
-	padding: 30px;
-	text-align: center;
+	font-family: 'Play', sans-serif;
+    padding: 30px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
 }
 .oldPrice{
 	text-decoration:line-through;
 	font-size: 18px;
 	font-family: 'Play', sans-serif;
+	font-weight: bold;
 
 }
 .newPrice{
@@ -346,20 +395,33 @@ body{
 	font-size: 24px;
     margin-left: 10px;
 	font-family: 'Play', sans-serif;
+	font-weight: bold;
 }
 .oneItem .bluBut{
 	float: none;
 	margin: 20px;
+	text-transform: uppercase;
+	font-size: 14px;
 }
 .main{
 	
 }
 .main .desc{
 	margin-top: 20px;
+    font-size: 18px;
+    line-height: 22px;
 }
 .desc h3{
 	font-family: 'Play', sans-serif;
-	color: #00404e;
+    color: #00404e;
+    line-height: 28px;
+    font-weight: bold;
+}
+.desc p{
+	margin-top: 16px;
+}
+.desc .col-md-4{
+	padding-left: 0;
 }
 .calcWrapper{
 
@@ -368,15 +430,55 @@ body{
 	max-width: 550px;
 	margin: 40px auto;
 	background: #fff;
+	margin-left: 0;
 }
+.calc .netSys{
+    height: 26px;
+    background-size: 55px;
+    width: 26px;
+    float: left;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-top: 8px;
+}
+.calc .autosys{
+    height: 26px;
+    background-size: 55px;
+    width: 26px;
+    float: left;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-top: 8px;
+}
+.calc .hybsys{
+    height: 26px;
+    background-size: 55px;
+    width: 26px;
+    float: left;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-top: 8px;
+	
+}
+.calc .active{
+	background-position: -29px 0px;
+
+}
+
 .selectCalc{
+	font-family: 'Play', sans-serif;
 	float: left;
 	background: #c8e199; 
 	border-right: 1px solid #fff;
 	padding-left: 10px;
 	width: 33.3%;
-	line-height: 53px;
-	
+	line-height: 40px;
+	font-weight: bold;
+	cursor: pointer;
+
+}
+.selectCalc:hover {
+    background: #daeabb;
 }
 .question{
 	margin:30px 20px;
@@ -408,7 +510,7 @@ body{
     height: 30px !important;
     outline: none;
 }
-.amount{font-size: 24px; color: #c8e199;font-family: 'Play', sans-serif; }
+.amount{font-size: 24px; color: #c8e199;font-family: 'Play', sans-serif;font-weight: bold; }
 .consume{
     float: right;
     left: -30px;
@@ -436,7 +538,7 @@ body{
 	margin: 45px auto; 
 	border: 1px solid #c8e199;
 	max-width: 500px;
-	    margin-bottom: 15px;
+	margin-bottom: 15px;
 }
 .resultTable p{
 	margin: 15px;
@@ -449,6 +551,14 @@ body{
 .resultTable table tr{
 	line-height: 20px;
 	text-align:left;
+	   font-size: 15px;
+    font-family: 'Play', sans-serif;
+
+}
+.resultTable table tr a{
+	font-family: 'Play', sans-serif;
+	color: #00404e;
+	font-weight: bold;
 }
 .trBg{
 	background: #e9f6e2;
@@ -461,6 +571,8 @@ body{
 	color: #c8e199;
 	margin:15px 15px;
 	display: block;
+	text-decoration: underline;
+	font-size: 16px;
 }
 .pricePlant{
 	float: right;
@@ -525,7 +637,8 @@ body{
     display: block;
 }
 .footer .product{
-	padding: 0 0px;
+	padding: 0 25px;
+	letter-spacing: 1px;
 }
 .footer .product ul{
 	list-style-type: none;
@@ -539,13 +652,16 @@ body{
 .footer .phone{
 	float: none;
 	font-size: 14px;
+	font-family: 'PT Sans', sans-serif;
 }
 .footer .imgLogo{
-	margin: 0
+	margin: 0;
+	width: 180px;
 }
 .footer .location{
 	display: block;
 	margin-bottom: 10px;
+	font-size: 15px;
 }
 .footer .search input{
 	outline: none;
@@ -570,7 +686,7 @@ body{
     left: 188px;
 }
 .artic .title{
-	font-size: 16px;
+	font-size: 19px;
 	font-weight: bold;
 	color: #00404e;
 	margin-top: 40px;
@@ -583,6 +699,7 @@ body{
 
 }
 .artic a{
+	font-size: 16px;
 	display: block;
 	text-align: right;
 	color:#00404e;
@@ -592,4 +709,72 @@ body{
 	background: #363636;
 	width: 100%
 }
-
+.tqg{
+    margin-top: 70px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+.tqg a{
+	font-family: 'PT Sans', sans-serif;
+	color: #c8e199;
+	text-decoration: none;
+}
+.box_window{
+  width:700px;
+  display: none; 
+  position:fixed;
+  top:15%;
+  left:60%;
+  margin-left:-350px;
+  z-index:11;
+  background: #fff;
+  display:none;
+  padding:20px;
+}
+.box_window_in {
+  position: relative;
+  overflow-y:auto;
+}
+.box_title {
+  position: absolute;
+  left: 0px;
+  top: -30px;
+  color: #fff;
+}
+.bw_close{
+  position:absolute;
+  top: -25px;
+  font-size: 10px;
+  color: #fff;
+  right:0px;
+  cursor:pointer;
+  z-index: 2;
+}
+.mask{
+  position:fixed;
+  background:rgba(0, 0, 0, 0.38);
+  display:none;
+  height:100%;
+  width: 100%;
+  z-index:10;
+}
+.to_blur.blur {
+ -webkit-filter: blur(5px);
+ -moz-filter: blur(5px);
+ -o-filter: blur(5px);
+ -ms-filter: blur(5px);
+ filter: blur(5px);
+}
+.popwindow .contactUs{
+	margin: 45px auto;
+}
+.popwindow .contactUs p{
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+}
+.popwindow input::-webkit-input-placeholder {color:#000;}
+.popwindow input::-moz-placeholder {color:#000;} .popwindow input:-moz-placeholder {color:#000;}
+.popwindow input:-ms-input-placeholder {color:#000;} .popwindow textarea::-webkit-input-placeholder {color:#000;}
+.popwindow textarea::-moz-placeholder {color:#000;} .popwindow textarea:-moz-placeholder {color:#000;}
+.popwindow textarea:-ms-input-placeholder  {color:#000;}

@@ -23,25 +23,35 @@
 
   </script>
 </head>
+
+
+
+<div class="to_blur">
 <body>
+
+<div class="popupback">
+	<div class="popup">
+
+	</div>
+</div>
 <div class="wrapper">
 	
 	<div class="headWrapper ">
 	<img class="gg" src="img/menubg.png">
 		<div class="row">
-		<div class="col-md-6 col-xs-12 col-sm-6">
+		<div class="col-md-6 col-xs-12 col-sm-6 log">
 			<img src="img/logo.png" class="imgLogo">
-			<div class="textLogo">Импортер оборудывания
+			<div class="textLogo">Импортер оборудoвания
 			для солнечных систем</div>
 		</div>
-		<div class="col-md-4 col-xs-12 col-md-offset-0 col-sm-6">
+		<div class="col-md-4 col-xs-12 col-md-offset-5 col-sm-offset-8 col-sm-6">
 			<div class="enter">
 				<div>Формируем дилерскую сеть</div>
 				<button class="dilerEnter">Вход для дилеров</button>
 			</div>
 		</div>
 
-		<div class=" col-md-2 col-sm-6 col-xs-5 col-xs-offset-3 col-md-offset-0 col-sm-offset-0   ">
+		<div class=" col-md-3 col-sm-6 col-xs-5 col-xs-offset-3 col-md-offset-0 col-sm-offset-6  " style="text-align:right;">
 		<form class="visible-sm" style="float: left;margin-top: 45px; margin-right:20px;">
 			<button></button>
 				<input type="text" placeholder="Я ищу">
@@ -50,7 +60,7 @@
 				(067) 218-62-76
 				<br>(097) 410-05-07
 				<br>(067) 563-11-11<br>
-				<a href="#">Перезвоните мне!</a>
+				<a href="#" class="popbutton" data-window="1">Перезвоните мне!</a>
 			</div>
 		</div>
 		</div>
@@ -86,7 +96,7 @@
 		  <!-- Контент слайда (slider wrap)-->
 		 <div class="carousel-inner">
 		    <div class="item active">
-		      <img src="img/1.png" alt="...">
+		      <img src="img/1.png" alt="">
 		      <div class="carousel-caption">
 		        <div class="info ">
 				Представленные системы безопасны для природы и пользователей, высокотехнологичны, просты в установке и практически не требуют обслуживания в процессе эксплуатации. Наши инженеры окажут необходимую техническую поддержку при расчете систем.
@@ -124,6 +134,7 @@
 	</div>
 	<div class="wrpapperBlock">
 		<div class="row ">
+		
 			<div class="col-md-4 col-sm-4 slideBlock" data-target="#carousel-example-generic" data-slide-to="0">
 			<img class="activeImg" src="img/activeslide.png">
 			<div class="netSys"></div>Сетевая <br> система</div>
@@ -133,13 +144,14 @@
 			<div class="col-md-4 col-sm-4 slideBlock" data-target="#carousel-example-generic" data-slide-to="2">
 			<img class="activeImg" src="img/activeslide.png">
 			<div class="hybsys"></div>Автономная <br> система</div>
-		</div>
+			</div>
+		
 	</div>
 	
 		<div class="row desc">
 		<div class="col-md-8">
 			<h3>
-				Импортер оборудования
+				Импортер оборудования<br>
 				и солнечных систем
 			</h1>
 			<p>
@@ -149,7 +161,7 @@
 				<h3>Нужна помощь?</h3>
 				<p>Воспользуйтесь калькулятором, чтобы понять, какая электростанция вам нужна.</p>
 				<div class="calc">
-					<div class="selectCalc"><div class="netSys hidden-xs"></div> Сетевая</div>
+					<div class="selectCalc" style="background:#fff;"><div class="netSys active hidden-xs"></div> Сетевая</div>
 					<div class="selectCalc"><div class="autosys hidden-xs"></div>Гибридная</div>
 					<div class="selectCalc"><div class="hybsys hidden-xs"></div>Гибридная</div>
 					<div style="clear:both;"></div>
@@ -218,7 +230,7 @@
 				</div>
 				<span class="oldPrice">320$</span><span class="newPrice">300$</span>
 				<div></div>
-					<button class="bluBut">ПОДРОБНЕЕ</button>
+					<button class="bluBut">Купить</button>
 			</div>
 			<div class="artic">
 				<div class="title">Как выбрать солнечну батарею?</div>
@@ -254,10 +266,10 @@
 			</div>
 			<div class="col-md-4 col-xs-10 col-xs-offset-1 col-sm-offset-4 col-md-offset-0">
 				<form class="contactUs">
-					<input type="text" size="20" placeholder="NAmw">
-					<input type="text" size="20" placeholder="NAmw">
-					<input type="text" size="20" placeholder="NAmw">
-					<textarea placeholder="NAmw"></textarea> 
+					<input type="text" size="20" placeholder="Имя">
+					<input type="text" size="20" placeholder="E-mail">
+					<input type="text" size="20" placeholder="Телефон">
+					<textarea placeholder="Введите свой вопрос..."></textarea> 
 					<button class="bluBut">ОТПРАВИТЬ</button>
 				</form>
 			</div>
@@ -270,11 +282,23 @@
 					<input type="text" size="20" placeholder="Я ищу...">
 					<div><img src="img/search2.png"></div>
 				</form>
-				<div style="margin-top:60px;margin-bottom:10px;">TQG</div>
+				<div class="tqg">Разработано командой <a href="">"Top quality guys"</a></div>
 			</div>
 			</div>	
 		</div>
 	</div>
 
 </body>
+</div>
+<div id="1" class="popwindow" data-title="" data-height="300" data-width="400">
+
+	<form class="contactUs">
+	<p>Оставьте свой номер и наш менеджер с Вами свяжется</p>
+		<input type="text" size="20" placeholder="Имя">
+		<input type="text" size="20" placeholder="Телефон">
+		<button class="bluBut">ОТПРАВИТЬ</button>
+	</form>
+</div>
+
+
 </html>
