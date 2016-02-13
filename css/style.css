@@ -1,6 +1,4 @@
 
-
-
 @import url(https://fonts.googleapis.com/css?family=PT+Sans);
 @import url(https://fonts.googleapis.com/css?family=Play:400,700);
 
@@ -57,12 +55,11 @@ body{
     margin-top: -10px;
 }
 .enter{
-	position: absolute;
 	text-align: center;
 	margin-top: 10px;
 	font-size: 13px;
 	font-family: 'Play', sans-serif;
-	margin-left: 122px;
+	margin-left: 20px;
 	font-weight: bold;
 }
 .dilerEnter{
@@ -87,6 +84,7 @@ body{
 
 }
 .phone{
+	text-align: center;
 	font-size: 14px;
     font-weight: bolder;
 	margin-top: 7px;
@@ -134,7 +132,7 @@ body{
     font-family: 'Play', sans-serif;
     font-weight: bold;
     margin-top: 22px;
-    margin-left: 0px;
+    
     margin-bottom: 20px;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -323,6 +321,7 @@ body{
     margin-right: 33px;
     margin-left: -15px;
     margin-top: 4px;
+    background-size: 70px;
 	
 }
 .autosys{
@@ -334,9 +333,10 @@ body{
     margin-right: 33px;
     margin-left: -15px;
     margin-top: 4px;
+    background-size: 70px;
 }
 .hybsys{
-		background-image: url(../img/hybsys.png);
+	background-image: url(../img/hybsys.png);
 	background-repeat: no-repeat;
 	height: 35px;
 	width: 35px;
@@ -344,6 +344,7 @@ body{
     margin-right: 33px;
     margin-left: -15px;
     margin-top: 4px;
+    background-size: 70px;
 
 }
 .activeImg{
@@ -353,8 +354,8 @@ body{
     display: none;
 }
 .activeSystem{
-	background-color: #000;
-	background-position: ;
+	background-position: -35px 0px;
+    background-size: 70px;
 }
 .oneItem{
 	background: #c8e199;
@@ -420,9 +421,7 @@ body{
 .desc p{
 	margin-top: 16px;
 }
-.desc .col-md-4{
-	padding-left: 0;
-}
+
 .calcWrapper{
 
 }
@@ -655,7 +654,7 @@ body{
 	font-family: 'PT Sans', sans-serif;
 }
 .footer .imgLogo{
-	margin: 0;
+	margin-top: 15px;
 	width: 180px;
 }
 .footer .location{
@@ -778,3 +777,34 @@ body{
 .popwindow input:-ms-input-placeholder {color:#000;} .popwindow textarea::-webkit-input-placeholder {color:#000;}
 .popwindow textarea::-moz-placeholder {color:#000;} .popwindow textarea:-moz-placeholder {color:#000;}
 .popwindow textarea:-ms-input-placeholder  {color:#000;}
+@media(max-width:767px){
+	.gg{
+	position: absolute;
+	margin-left: -417px;
+	display: none;	
+	}
+	.mobLog{
+		padding: 15px;
+		background: #024150;
+		    
+	}
+	.shop{
+		margin-left: 25%;
+	}
+	.headTool form button{
+		margin-left: 25%
+	}
+
+
+}
+@media(min-width:768px){
+	.menu{
+		max-width: 749px;
+	}
+}
+@media(min-width:992px){
+		.menu{
+		max-width: 950px;
+	}
+}
+@media(min-width:1200px){}

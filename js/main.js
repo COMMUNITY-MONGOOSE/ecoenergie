@@ -167,13 +167,24 @@ $(document).ready(function() {
   });
 })(jQuery)
 $(function($){
-
   $(function(){
     $(".selectCalc").click(function(){
       $(".selectCalc div").removeClass("active");
       $(".selectCalc").css("background","#c8e199");
       $(this).css("background","#fff");
       $(this).children("div").addClass("active");
+    });
+    $(".slideBlock").click(function(){
+      $(".slideBlock").children("img").css("display","none");
+      $(".slideBlock div").removeClass("activeSystem");
+      $(".slideBlock").css("background","#c8e199");
+      $(this).css("background","#fff");
+      $(this).children("div").addClass("activeSystem");
+      $(this).children("img").css("display","block");
     })
+    $('.carousel').carousel({
+     interval:0
+    })
+
   })
 })

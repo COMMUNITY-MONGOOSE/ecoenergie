@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8">
 	<title>ecoenergie</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- jQuery -->
@@ -29,30 +30,30 @@
 <div class="to_blur">
 <body>
 
-<div class="popupback">
-	<div class="popup">
-
-	</div>
-</div>
 <div class="wrapper">
 	
 	<div class="headWrapper ">
 	<img class="gg" src="img/menubg.png">
 		<div class="row">
-		<div class="col-md-6 col-xs-12 col-sm-6 log">
+		<div class="col-md-6 col-xs-12 col-sm-6 log hidden-xs">
 			<img src="img/logo.png" class="imgLogo">
 			<div class="textLogo">Импортер оборудoвания
 			для солнечных систем</div>
 		</div>
-		<div class="col-md-4 col-xs-12 col-md-offset-5 col-sm-offset-8 col-sm-6">
+		<div class="col-md-6 col-xs-12 col-sm-6 visible-xs mobLog">
+			<img src="img/logo.png" class="imgLogo">
+			<div class="textLogo">Импортер оборудoвания
+			для солнечных систем</div>
+		</div>
+		<div class="col-md-3 col-xs-12 col-md-offset-6 col-sm-offset-6 col-sm-6">
 			<div class="enter">
 				<div>Формируем дилерскую сеть</div>
 				<button class="dilerEnter">Вход для дилеров</button>
 			</div>
 		</div>
 
-		<div class=" col-md-3 col-sm-6 col-xs-5 col-xs-offset-3 col-md-offset-0 col-sm-offset-6  " style="text-align:right;">
-		<form class="visible-sm" style="float: left;margin-top: 45px; margin-right:20px;">
+		<div class="  col-md-3 col-sm-7 col-xs-12 col-md-offset-0 col-sm-offset-5  " style="text-align:right;">
+		<form class="visible-sm" style="float: left;margin-top: 40px; margin-right:20px;">
 			<button></button>
 				<input type="text" placeholder="Я ищу">
 		</form>
@@ -68,11 +69,11 @@
 	</div>
 	</div>
 	<div class="row headTool">
-		<form class=" col-md-4 col-xs-12 col-xs-offset-2 col-md-offset-5 col-sm-offset-6 hidden-sm">
+		<form class=" col-md-4 col-xs-12 col-md-offset-5 col-sm-offset-6 hidden-sm mobSearch">
 			<button></button>
 				<input type="text" placeholder="Я ищу">
 		</form>
-		<div class="shop col-md-3 col-xs-12 col-xs-offset-2 col-sm-offset-6 col-md-offset-0">
+		<div class="shop col-md-3 col-xs-12  col-sm-offset-6 col-md-offset-0">
 			Корзина пуста <div class="basket"><img src="img/basket.png"></div>
 		</div>
 		</div>
@@ -97,7 +98,7 @@
 		 <div class="carousel-inner">
 		    <div class="item active">
 		      <img src="img/1.png" alt="">
-		      <div class="carousel-caption">
+		      <div class="carousel-caption visible-md">
 		        <div class="info ">
 				Представленные системы безопасны для природы и пользователей, высокотехнологичны, просты в установке и практически не требуют обслуживания в процессе эксплуатации. Наши инженеры окажут необходимую техническую поддержку при расчете систем.
 					<button class="bluBut">ПОДРОБНЕЕ</button>
@@ -106,7 +107,7 @@
 		    </div>
 		   	<div class="item">
 		      <img src="img/2.png" alt="...">
-		      <div class="carousel-caption">
+		      <div class="carousel-caption visible-md">
 		        <div class="info ">
 				Представленные системы безопасны для природы и пользователей, высокотехнологичны, просты в установке и практически не требуют обслуживания в процессе эксплуатации. Наши инженеры окажут необходимую техническую поддержку при расчете систем.
 					<button class="bluBut">ПОДРОБНЕЕ</button>
@@ -115,7 +116,7 @@
 		    </div>
 		    <div class="item">
 		      <img src="img/1.png" alt="...">
-		      <div class="carousel-caption">
+		      <div class="carousel-caption visible-md">
 		        <div class="info ">
 				Представленные системы безопасны для природы и пользователей, высокотехнологичны, просты в установке и практически не требуют обслуживания в процессе эксплуатации. Наши инженеры окажут необходимую техническую поддержку при расчете систем.
 					<button class="bluBut">ПОДРОБНЕЕ</button>
@@ -135,9 +136,9 @@
 	<div class="wrpapperBlock">
 		<div class="row ">
 		
-			<div class="col-md-4 col-sm-4 slideBlock" data-target="#carousel-example-generic" data-slide-to="0">
-			<img class="activeImg" src="img/activeslide.png">
-			<div class="netSys"></div>Сетевая <br> система</div>
+			<div class="col-md-4 col-sm-4 slideBlock" style="    background: #fff;" data-target="#carousel-example-generic" data-slide-to="0">
+			<img class="activeImg " src="img/activeslide.png">
+			<div class="netSys activeSystem"></div>Сетевая <br> система</div>
 			<div class="col-md-4 col-sm-4 slideBlock" data-target="#carousel-example-generic" data-slide-to="1">
 			<img class="activeImg" src="img/activeslide.png">
 			<div class="autosys"></div>Гибридная <br> система</div>
@@ -163,7 +164,7 @@
 				<div class="calc">
 					<div class="selectCalc" style="background:#fff;"><div class="netSys active hidden-xs"></div> Сетевая</div>
 					<div class="selectCalc"><div class="autosys hidden-xs"></div>Гибридная</div>
-					<div class="selectCalc"><div class="hybsys hidden-xs"></div>Гибридная</div>
+					<div class="selectCalc"><div class="hybsys hidden-xs"></div>Автономная</div>
 					<div style="clear:both;"></div>
 					<div class="question">Какое Ваше среднее потребление электроэнергии в месяц?</div>
 
@@ -260,6 +261,7 @@
 					<li><a href="#">Автономные инверторы</a></li>
 					<li><a href="#">Контролеры заряда</a></li>
 					<li><a href="#">Соеденительные коннекторы</a></li>
+					<li><a href="#">Гибридные инверторы</a></li>
 				</ul>
 				<a href="#">Готовые решения</a>
 				<a href="#">Акции и скидки</a>
