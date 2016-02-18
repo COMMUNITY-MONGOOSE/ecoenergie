@@ -1,11 +1,13 @@
 $(function() {
     $( "#slider-range-min" ).slider({
       range: "min",
-      value: 1,
-      min: 1,
-      max: 100,
+      value: 3,
+      min: 3,
+      max: 30,
+      step:3,
       slide: function( event, ui ) {
         $( ".amount" ).html( ui.value );
+        $( "#slider-range-min" ).slider( "value" );
       }
     });
     $( ".amount" ).html( $( "#slider-range-min" ).slider( "value" ) );
