@@ -12,6 +12,20 @@ $(function() {
     });
     $( ".amount" ).html( $( "#slider-range-min" ).slider( "value" ) );
   });
+$(function() {
+    $( "#slider-range-min-sm" ).slider({
+      range: "min",
+      value: 3,
+      min: 3,
+      max: 30,
+      step:3,
+      slide: function( event, ui ) {
+        $( ".amount" ).html( ui.value );
+        $( "#slider-range-min" ).slider( "value" );
+      }
+    });
+    $( ".amount" ).html( $( "#slider-range-min" ).slider( "value" ) );
+  });
 (function($) {
 
   $.fn.menumaker = function(options) {

@@ -5,14 +5,11 @@
 	<title>ecoenergie</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<!-- jQuery -->
-
-
 	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	
+	<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
 	
 	<!-- Latest compiled and minified JavaScript -->
-	
+	<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap-theme.min.css">
 		<!-- style -->
 	<link rel="stylesheet" href="css/style.css">
 
@@ -39,34 +36,41 @@
 				<div class="textLogo">Импортер оборудoвания
 				для солнечных систем</div>
 			</div>
-			<div class="col-md-3 col-xs-12 col-md-offset-6 col-sm-offset-6 col-sm-6">
+			<div class="col-md-4 col-xs-12 col-md-offset-6 col-sm-offset-7 col-sm-5">
 				<div class="enter">
 					<div>Формируем дилерскую сеть</div>
 					<button class="dilerEnter">Вход для дилеров</button>
 				</div>
 			</div>
-			<div class="  col-md-3 col-sm-7 col-xs-12 col-md-offset-0 col-sm-offset-5 underFind" >
-			<form class="visible-sm findBut">
-				<button></button>
-					<input type="text" placeholder="Я ищу">
-			</form>
+			<div class="  col-md-2 col-sm-7 col-xs-12 col-md-offset-0 col-sm-offset-5 underFind" >
 				<div class="phone">
 					(067) 218-62-76
 					<br>(097) 410-05-07
 					<br>(067) 563-11-11<br>
 					<a href="#" class="popbutton" data-window="1">Перезвоните мне!</a>
 				</div>
+				<form class="visible-sm findBut">
+				<button></button>
+					<input type="text" placeholder="Я ищу">
+				</form>
+				
 			</div>
 			</div>
 		</div>
 	</div>
+
 	<div class="row headTool">
 		<form class=" col-md-4 col-xs-12 col-md-offset-5 col-sm-offset-6 hidden-sm mobSearch">
 			<button></button>
 				<input type="text" placeholder="Я ищу">
 		</form>
-		<div class="shop col-md-3 col-sm-3 col-xs-8  col-sm-offset-6 col-md-offset-0">
-			Корзина пуста <div class="basket"><img src="img/basket.png"></div>
+		<div class=" col-md-3 col-sm-4 col-xs-12 col-sm-offset-6 col-md-offset-0 ">
+			<div class="mobCart">
+			<div class="basket"><img src="img/basket.png"></div>
+			<div class="shop">
+				Корзина пуста 
+			</div>
+			</div>
 		</div>
 	</div>
 </header>
@@ -134,41 +138,25 @@
 	</div>
 	<div class="row desc">
 		<div class="col-md-8 col-sm-8">
-				<h3>
+				<h3 class="import">
 					Импортер оборудования<br>
 					и солнечных систем
-				</h1>
+				</h3>
 				<p>
 					EcoEnergie – это крупная межрегиональная украинская компания, занимающаяся продажей солнечных батарей и модулей предназначенных для создания автономных систем энергообеспечения. Солнечные панели полностью стандартизированы, и подойдут для любых типов крыш. Предлагаемые инверторы напряжения, аккумуляторные батареи, контроллеры заряда, соединительные коннекторы и другие комплектующие, технически совместимы между собой. Грандиозные планы нашей команды о продвижении на Украине технологий возобновляемой энергетики заслуженно оценены нашими клиентами. Теперь ваш дом получил право на экологически чистую энергию солнечного света.
 				</p>
-		</div>
-		<div class="col-md-4 col-sm-4">
-					<a class="allSales hidden-xs" href="#">Все акции и скидки >></a>
-					<div class="oneItem">
-					<img class="sale" src="img/sale.png">
-						<div class="imgItem">
-							<img src="img/1.png">
-						</div>
-						<div class="infoItem">
-						Солнечная батарея YINGLI 310Вт / 24В (поликристаллическая) YL310P-35b
-						<br>						
-					</div>
-					<span class="oldPrice">320$</span><span class="newPrice">300$</span>
-					<div></div>
-						<button class="bluBut">Купить</button>
-				</div>
-				<a class="allSales visible-xs" href="#">Все акции и скидки >></a>
-		</div>
-	</div>	
-		<section class="row desc">
-		<div class="col-md-8 col-sm-12">
-				<div class="calcWrapper ">
+				<div class="row">
+				<div class="col-md-12 col-sm-12 visible-lg visible-md">
+				<div class="calcWrapper">
 					<h3>Нужна помощь?</h3>
 					<p>Воспользуйтесь калькулятором, чтобы понять, какая электростанция вам нужна.</p>
-					<div class="calc">
+					<div class="wrapSelectCalc">
 						<div class="selectCalc" style="background:#fff;"><div class="netSys active hidden-xs"></div> Сетевая</div>
 						<div class="selectCalc"><div class="autosys hidden-xs"></div>Гибридная</div>
 						<div class="selectCalc"><div class="hybsys hidden-xs"></div>Автономная</div>
+					</div>
+					<div class="calc">
+						
 						<div style="clear:both;"></div>
 						<div class="question">Какое Ваше среднее потребление электроэнергии в месяц?</div>
 
@@ -216,11 +204,117 @@
 						 	<a href="#" class="plantLink">Подробнее о станции >></a>
 						</div>
 						<div class="pricePlant">Цена станции: <span>15 000 $</span></div>
+						<div style="clear:both;"></div>
+						<div class="textCenter" >
 						<button class="bluBut col-md-10 col-xs-5">получить консультацию</button>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="artic col-md-4 col-sm-12 col-sm-12">
+			</div>
+		</div>
+		<div class="col-md-4 col-sm-4 padingMain">
+				<div class="hidden-xs">
+					<a class="allSales hidden-xs" href="#">Все акции и скидки >></a>
+					<div class="oneItem">
+					<img class="sale" src="img/sale.png">
+						<div class="imgItem">
+							<img src="img/sale.jpg">
+						</div>
+						<div class="infoItem">
+						Солнечная батарея YINGLI 310Вт / 24В (поликристаллическая) YL310P-35b
+						<br>						
+					</div>
+					<span class="oldPrice">320$</span><span class="newPrice">300$</span>
+					<div></div>
+						<button class="bluBut">Купить</button>
+				</div>
+				<a class="allSales visible-xs" href="#">Все акции и скидки >></a>
+				</div>
+		<section class="row  visible-md visible-lg">
+		
+			<div class="artic  col-md-12 col-sm-12 col-sm-12">
+				<div class="title padingMain">Как выбрать солнечну батарею?</div>
+				<div class="text padingMain">Солнечные панели полностью стандартизированы, и подойдут для любых типов крыш. Предлагаемые инверторы напряжения, аккумуляторные батареи, контроллеры заряда, соединительные коннекторы и другие комплектующие, технически совместимы между собой. Грандиозные планы нашей команды о продвижении на Украине технологий возобновляемой энергетики заслуженно оценены нашими клиентами. Теперь ваш дом получил право на экологически чистую энергию солнечного света.</div>
+				<a href="#">Читать дальше >></a>
+			</div>
+			<div class="artic  col-md-12 col-sm-12">
+				<div class="title padingMain">Как выбрать солнечну батарею?</div>
+				<div class="text padingMain">Солнечные панели полностью стандартизированы, и подойдут для любых типов крыш. Предлагаемые инверторы напряжения, аккумуляторные батареи, контроллеры заряда, соединительные коннекторы и другие комплектующие, технически совместимы между собой. Грандиозные планы нашей команды о продвижении на Украине технологий возобновляемой энергетики заслуженно оценены нашими клиентами. Теперь ваш дом получил право на экологически чистую энергию солнечного света.</div>
+				<a href="#">Читать дальше >></a>
+			</div>
+		</section>
+		</div>
+	</div>
+
+		<section class="row comonText visible-sm visible-xs">
+			<div class="col-md-12 col-sm-12">
+				<div class="calcWrapper">
+					<h3>Нужна помощь?</h3>
+					<p>Воспользуйтесь калькулятором, чтобы понять, какая электростанция вам нужна.</p>
+
+						<div class="wrapSelectCalc">
+						<div class="selectCalc" style="background:#fff;"><div class="netSys active hidden-xs"></div> Сетевая</div>
+						<div class="selectCalc"><div class="autosys hidden-xs"></div>Гибридная</div>
+						<div class="selectCalc"><div class="hybsys hidden-xs"></div>Автономная</div>
+					</div>
+					<div class="calc">
+						
+						<div style="clear:both;"></div>
+						<div class="question">Какое Ваше среднее потребление электроэнергии в месяц?</div>
+
+						<div id="slider-range-min-sm" ></div>
+						  <div class="consume hidden-xs"><span class="amount"></span> кВт/месяц</div>
+						  <div style="clear:both;"></div>
+						  <div class="consume consumMob visible-xs"><span class="amount"></span> кВт/месяц</div>
+						  <div class="result">Вам подходит станция мощностью<br><span class="">3</span> кВт/час</div>
+						<div class="resultTable">
+							<p>Рекомендована электростанция №1:</p>
+						 	<table>
+						 	<tbody>
+						 		<tr class="trBg">
+						 			<td>1</td>
+						 			<td><a href="#">Солнечная батарея</a></td>
+						 			<td>15 кВт</td>
+						 			<td>15 $</td>
+						 		</tr>
+						 		<tr >
+						 			<td>2</td>
+						 			<td><a href="#">Контроллер заряда</a></td>
+						 			<td>220 В</td>
+						 			<td>1100 $</td>
+						 		</tr>
+						 		<tr class="trBg">
+						 			<td>3</td>
+						 			<td><a href="#">Коннектор</a></td>
+						 			<td>3 шт</td>
+						 			<td>150 $</td>
+						 		</tr>
+						 		<tr>
+						 			<td>4</td>
+						 			<td><a href="#">Сетевой инвертор</a></td>
+						 			<td>450 К</td>
+						 			<td>250 $</td>
+						 		</tr>
+						 		<tr class="trBg">
+						 			<td>5</td>
+						 			<td><a href="#">Аккумкляторная батарея</a></td>
+						 			<td>3000 А</td>
+						 			<td>8 000 $ </td>
+						 		</tr>
+						 		</tbody>
+						 	</table>
+						 	<a href="#" class="plantLink">Подробнее о станции >></a>
+						</div>
+						<div class="pricePlant">Цена станции: <span>15 000 $</span></div>
+						<div style="clear:both;"></div>
+						<div class="textCenter" >
+						<button class="bluBut col-md-10 col-xs-5">получить консультацию</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="artic col-md-4 col-sm-12 col-sm-12 ">
 				<div class="title">Как выбрать солнечну батарею?</div>
 				<div class="text">Солнечные панели полностью стандартизированы, и подойдут для любых типов крыш. Предлагаемые инверторы напряжения, аккумуляторные батареи, контроллеры заряда, соединительные коннекторы и другие комплектующие, технически совместимы между собой. Грандиозные планы нашей команды о продвижении на Украине технологий возобновляемой энергетики заслуженно оценены нашими клиентами. Теперь ваш дом получил право на экологически чистую энергию солнечного света.</div>
 				<a href="#">Читать дальше >></a>
@@ -231,6 +325,25 @@
 				<a href="#">Читать дальше >></a>
 			</div>
 		</section>
+		<div class="col-xs-12">
+		<div class="visible-xs">
+					<a class="allSales hidden-xs" href="#">Все акции и скидки >></a>
+					<div class="oneItem" style="margin-top: 40px;">
+					<img class="sale" src="img/sale.png">
+						<div class="imgItem">
+							<img src="img/sale.jpg">
+						</div>
+						<div class="infoItem">
+						Солнечная батарея YINGLI 310Вт / 24В (поликристаллическая) YL310P-35b
+						<br>						
+					</div>
+					<span class="oldPrice">320$</span><span class="newPrice">300$</span>
+					
+						<button class="bluBut">Купить</button>
+				</div>
+				<a class="allSales visible-xs" href="#">Все акции и скидки >></a>
+				</div>
+		</div>
 	</main>
 <div style="clear:both;"></div>
 <footer>
@@ -264,7 +377,7 @@
 			</div>
 			<div class="col-md-4 col-sm-4 col-xs-12  col-md-offset-0">
 				<img src="img/logo.png" class="imgLogo">
-				<span class="phone"><br>(067) 563-11-11 <br> (067) 218-62-76</span>
+				<span class="phone"><br>(067) 563-11-11 <br>  &nbsp;&nbsp;&nbsp;(067) 218-62-76</span>
 
 				<span class="location">Киево-Святошинский р-н, г. Вишневое, ул. Остапа Вишни 1,  </span>
 				<form class="search">
@@ -288,8 +401,8 @@
 		<button class="bluBut">отправить</button>
 	</form>
 </div>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
 	<script src="js/jquery-ui-1.11.4/jquery-ui.js"></script>
   	<script src="js/main.js"></script>
 
