@@ -172,6 +172,7 @@ $(document).ready(function() {
             $("#" + idwind).parent(".box_window").fadeIn().addClass("windactiv");
             $(".mask").fadeIn();
             $(".to_blur").addClass("blur");
+
         });
       };
       $(".mask, .bw_close").click(function(){
@@ -181,7 +182,53 @@ $(document).ready(function() {
            $(".to_blur").removeClass("blur");
       });
   });
-})(jQuery)
+})(jQuery);
+(function($) {
+  $(function() {
+      var popwindow = $('.popwindow1'); // Класс окна
+      var popbutton = $('.popbutton1'); // Класс кнопки
+      $("body").prepend("<div class='mask'></div>");
+      function preparewindow(windowobject) {
+        var winwidth = windowobject.data("width");
+        var winheight = windowobject.data("height");
+        var winmargin = winwidth / 2;
+        var wintitle = windowobject.data("title");
+
+        windowobject.wrap("<div class='box_window'></div>");
+        windowobject.addClass("box_window_in");
+        windowobject.parent(".box_window").prepend("<div class='bw_close'>закрыть</div>");
+        windowobject.css("cursor","pointer");
+
+        windowobject.parent(".box_window").prepend("<div class='box_title'>"+wintitle+"</div>");
+        windowobject.parent(".box_window").css({'width':winwidth,'height':winheight,'margin-left':'-'+winmargin})
+        windowobject.css({'height':winheight})
+      }  
+      if (popwindow.length) {
+        preparewindow(popwindow);
+        popbutton.click(function(){
+            var idwind = $(this).data("window");
+            $("#" + idwind).parent(".box_window").fadeIn().addClass("windactiv");
+            $(".mask").fadeIn();
+            $(".to_blur").addClass("blur");
+            $("#2").parent(".box_window").fadeIn();
+            $("#2 .contactUs").fadeIn();
+            $("#2 .dilerForm").css("display","none");
+            $(".dilersBack").click(function(){
+              $("#2 .contactUs").css("display","none");
+              $("#2 .dilerForm").fadeIn();
+            })
+        });
+      };
+        $(".mask, .bw_close").click(function(){
+        $(".windactiv").fadeOut();
+        $(".windactiv").removeClass("windactiv");
+        $(".mask").fadeOut();
+        $(".to_blur").removeClass("blur");
+        $("#2").parent(".box_window").css("display","none");
+
+      });
+  });
+})(jQuery);
 $(function($){
   $(function(){
     $(".selectCalc").click(function(){

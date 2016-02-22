@@ -392,7 +392,7 @@ body{
     line-height: 28px;
     text-decoration: underline;
     margin-top: 17px;
-    
+
 }
 .padingMain{
 	padding-left: 0 !important;
@@ -847,6 +847,28 @@ body{
 .popwindow input:-ms-input-placeholder {color:#000;} .popwindow textarea::-webkit-input-placeholder {color:#000;}
 .popwindow textarea::-moz-placeholder {color:#000;} .popwindow textarea:-moz-placeholder {color:#000;}
 .popwindow textarea:-ms-input-placeholder  {color:#000;}
+.popwindow1 .contactUs{
+	margin: 15px auto;
+}
+.popwindow1 .contactUs p{
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+}
+.popwindow1 .contactUs p:last-of-type{
+	margin-top: 15px;
+}
+.popwindow1 .contactUs a{
+	margin-top: 15px;
+	display: block;
+	font-size: 15px;
+	text-align: center;
+}
+.popwindow1 input::-webkit-input-placeholder {color:#000;}
+.popwindow1 input::-moz-placeholder {color:#000;} .popwindow1 input:-moz-placeholder {color:#000;}
+.popwindow1 input:-ms-input-placeholder {color:#000;} .popwindow1 textarea::-webkit-input-placeholder {color:#000;}
+.popwindow1 textarea::-moz-placeholder {color:#000;} .popwindow1 textarea:-moz-placeholder {color:#000;}
+.popwindow1 textarea:-ms-input-placeholder  {color:#000;}
 @media(max-width:767px){
 	.selectCalc{
 		font-size:14px; 
@@ -1202,4 +1224,30 @@ body{
 	margin-left: 80px;
 	cursor: pointer;
 }
+}
+.oneartic{
+	font-size: 18px;
+    font-family: 'PT Sans', sans-serif;
+}
+.thumbArtic{
+	width: 300px;
+	text-align: center;
+	
+	font-family: 'Play', sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+}
+.thumbArtic img{
+	width: 100%;
+	
+}
+.oneartic .left{
+	float: left;
+	margin: 0 10px 10px 0;
+	
+	
+}
+.oneartic .right{
+	float: right;
+	margin: 0 0 10px 10px;
 }
