@@ -1000,6 +1000,12 @@ body{
 	font-family: 'PT Sans', sans-serif;
 	font-size: 16px;
 }
+.partners a{
+	    color: #363636;
+}
+.partners a:hover{
+	    color: #363636;
+}
 .partners .text h3{
 	margin: 0;
 	font-family: 'Play', sans-serif;
@@ -1146,6 +1152,7 @@ body{
     margin-top: 10px;
 }
 .catalog .catalogImg{
+	height: 270px;
 	width: 100%;
 	text-align: center;
 	background-color: #fff;
