@@ -554,7 +554,7 @@ body{
   	background: -o-linear-gradient(bottom, #b2d495, #cce2b9) !important;
   	background: linear-gradient(to top, #b2d495, #cce2b9) !important;
 }
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+.calc .ui-state-default,.calc  .ui-widget-content .ui-state-default,.calc  .ui-widget-header .ui-state-default{
 	border-radius: 100%;
 	-webkit-border-radius: 100%;
 	-moz-border-radius:100%;
@@ -789,7 +789,7 @@ body{
 	text-decoration: none;
 }
 .box_window{
-  width:700px;
+  max-width:630px;
   display: none; 
   position:fixed;
   top:15%;
@@ -1258,3 +1258,114 @@ body{
 	float: right;
 	margin: 0 0 10px 10px;
 }
+.popwindowCart{
+	
+	cursor:default !important;
+}
+.popwindowCart .box_window{
+	max-width: 630px !important;
+}
+.popwindowCart .oneProduct{
+	margin-top: 15px;
+	border-bottom: 1px solid #c8e19e;
+	height: 160px;
+	font-size: 15px;
+    font-family: 'PT Sans', sans-serif;
+
+}
+.popwindowCart .oneProduct  img:first-of-type{
+    position: absolute;
+    left: 0px;
+}
+.popwindowCart .oneProduct .prodImg{
+	    height: 145px;
+}
+
+.popwindowCart .oneProduct .prodName{
+	
+	padding-top: 30px;
+    text-align: center;
+}
+.popwindowCart .oneProduct .prodCount{
+	
+	padding-top: 45px;
+    text-align: center;
+}
+.popwindowCart .oneProduct .prodCount input{
+	max-width: 30px;
+	border: 0;
+	outline: none;
+	}
+.popwindowCart .oneProduct .total{
+	
+	padding-top: 35px;
+    text-align: center;
+}
+.popwindowCart .oneProduct .plusOne{
+	background-image: url(../img/vertarrow.png) !important;
+	width: 17px;
+	height: 10px;
+	    position: absolute;
+       top: 40px;
+    left: 55px;
+    cursor: pointer;
+}
+.popwindowCart .oneProduct .minusOne{
+	background-image: url(../img/vertarrowbot.png) !important;
+	width: 17px;
+	height: 10px;
+	position: absolute;
+    left: 55px;
+    top: 63px;
+    cursor: pointer;
+}
+.popwindowCart .oneProduct input[type=number]::-webkit-inner-spin-button, 
+.popwindowCart .oneProduct input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+.popwindowCart  .bw_close{
+	position:static;
+}
+.popwindowCart .totalPrice{
+	margin-top: 20px;
+	font-weight: bold;
+	font-size: 15px;
+	font-family: 'Play', sans-serif;
+}
+.popwindowCart .totalPrice span{
+	font-weight: bold;
+	font-size: 24px;
+	font-family: 'Play', sans-serif;
+	color: #00404e;
+}
+.popwindowCart .total{
+	font-weight: bold;
+	font-size: 24px;
+	font-family: 'Play', sans-serif;
+	color: #00404e;
+}
+.popwindowCart .order{
+	margin-top: 20px;
+}
+.popwindowCart .order a{
+	 font-family: 'PT Sans', sans-serif;
+	 font-size: 16px;
+	 display: block;
+	 float: left;
+	 text-decoration: underline;
+	 margin-top: 15px;
+}
+.popwindowCart .order .bluBut{
+	 float: right;
+	 margin-top: 0;
+}
+.popwindowCart span{
+	font-weight: bold;
+	font-size: 15px;
+	font-family: 'Play', sans-serif;
+}
+.box_window {
+ 
+    top: 15%;
+    left: 53%;}

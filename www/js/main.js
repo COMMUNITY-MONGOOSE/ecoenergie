@@ -206,7 +206,7 @@ $(document).ready(function() {
       if (popwindow.length) {
         preparewindow(popwindow);
         popbutton.click(function(){
-            var idwind = $(this).data("window");
+            var idwind = "2";
             $("#" + idwind).parent(".box_window").fadeIn().addClass("windactiv");
             $(".mask").fadeIn();
             $(".to_blur").addClass("blur");
@@ -225,6 +225,52 @@ $(document).ready(function() {
         $(".mask").fadeOut();
         $(".to_blur").removeClass("blur");
         $("#2").parent(".box_window").css("display","none");
+
+      });
+  });
+})(jQuery);
+(function($) {
+  $(function() {
+      var popwindow = $('.popwindowCart'); // Класс окна
+      var popbutton = $('.popbuttonCart'); // Класс кнопки
+      $("body").prepend("<div class='mask'></div>");
+      function preparewindow(windowobject) {
+        var winwidth = windowobject.data("width");
+        var winheight = windowobject.data("height");
+        var winmargin = winwidth / 2;
+        var wintitle = windowobject.data("title");
+
+        windowobject.wrap("<div class='box_window'></div>");
+        windowobject.addClass("box_window_in");
+        windowobject.parent(".box_window").prepend("<div class='bw_close'></div>");
+        windowobject.css("cursor","pointer");
+
+        windowobject.parent(".box_window").prepend("<div class='box_title'>"+wintitle+"</div>");
+        windowobject.parent(".box_window").css({'width':winwidth,'height':winheight,'margin-left':'-'+winmargin})
+        windowobject.css({'height':winheight})
+      }  
+      if (popwindow.length) {
+        preparewindow(popwindow);
+        popbutton.click(function(){
+            var idwind = "3";
+            $("#" + idwind).parent(".box_window").fadeIn().addClass("windactiv");
+            $(".mask").fadeIn();
+            $(".to_blur").addClass("blur");
+            $("#3").parent(".box_window").fadeIn();
+            $("#3 .contactUs").fadeIn();
+            $("#3 .dilerForm").css("display","none");
+            $(".dilersBack").click(function(){
+              $("#3 .contactUs").css("display","none");
+              $("#3 .dilerForm").fadeIn();
+            })
+        });
+      };
+        $(".mask, .bw_close").click(function(){
+        $(".windactiv").fadeOut();
+        $(".windactiv").removeClass("windactiv");
+        $(".mask").fadeOut();
+        $(".to_blur").removeClass("blur");
+        $("#3").parent(".box_window").css("display","none");
 
       });
   });
@@ -280,6 +326,33 @@ $(function($){
       $(".slideBlock[data-slide-to="+a+"]").css("background","#fff");
       $(".slideBlock[data-slide-to="+a+"]").children("img").css("display","block");
       
+    });
+  })
+});
+$(function($){
+  $(function(){
+    $("#3 .prodCount input").on("keyup", function() {
+      var count = $(this).val();
+      $(this).parent(".prodCount").children("input").attr("value",count);
+    });
+    $("#3 .plusOne").click(function(){
+       count = $(this).parent(".prodCount").children("input").attr("value");
+      
+      count++;
+      $(this).parent(".prodCount").children("input").attr("value",count);
+      $(this).parent(".prodCount").children("input").val(count);
+    });
+    $("#3 .minusOne").click(function(){
+       count = $(this).parent(".prodCount").children("input").attr("value");
+      
+      count--;
+      $(this).parent(".prodCount").children("input").attr("value",count);
+      $(this).parent(".prodCount").children("input").val(count);
+      if (count == 0) {
+        count = 1;
+      $(this).parent(".prodCount").children("input").attr("value",count);
+      $(this).parent(".prodCount").children("input").val(count);
+      };
     });
   })
 });
