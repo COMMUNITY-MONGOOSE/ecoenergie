@@ -447,7 +447,7 @@ body{
     color: #00404e;
     line-height: 28px;
     font-weight: bold;
-     padding: 0 10px;
+    
 }
 .import{
 	margin-top: 40px;
@@ -458,7 +458,7 @@ body{
 }
 .desc p{
 	margin-top: 16px;
-	padding:0 10px;
+	
 }
 
 .calcWrapper h3{
@@ -870,6 +870,17 @@ body{
 .popwindow1 textarea::-moz-placeholder {color:#000;} .popwindow1 textarea:-moz-placeholder {color:#000;}
 .popwindow1 textarea:-ms-input-placeholder  {color:#000;}
 @media(max-width:767px){
+	.desc h3{
+		font-family: 'Play', sans-serif;
+	    color: #00404e;
+	    line-height: 28px;
+	    font-weight: bold;
+	    padding: 0 10px;
+	}
+	.desc p{
+		margin-top: 16px;
+		padding:0 10px;
+	}
 	.selectCalc{
 		font-size:14px; 
 		text-align:center;
@@ -1376,6 +1387,7 @@ body{
 	font-size: 24px;
 	font-weight: bold;
 	font-family: 'Play', sans-serif;
+	margin-top: 0;
 }
 .oneProduct .bluBut{
 	float: none;
@@ -1388,7 +1400,7 @@ body{
 	margin-left:45px;
 }
 .oneProduct .table{
-	max-width: 530px;
+	
 	margin-top: 30px;
 }
 .oneProduct table{
@@ -1398,13 +1410,16 @@ body{
 }
 .oneProduct table th{
 	padding:15px;
+	padding-left: 30px;
 	background-color: #c8e19d;
 	font-size: 15px;
 	font-weight: bold;
 	font-family: 'Play', sans-serif;
 }
 .oneProduct table td{
-	padding-left: 15px;	
+	padding: 5px;
+	padding-left: 30px;	
+
 
 }
 .oneProduct table tr{
