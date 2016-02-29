@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>ecoenergie</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<!-- jQuery -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
+	
+	<!-- Latest compiled and minified JavaScript -->
+	<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap-theme.min.css">
+		<!-- style -->
+	<link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="css/smoothness/jquery-ui.css">
+  <!-- fotorama.css & fotorama.js. -->
+	<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+  
+</head>
+
+<div class="to_blur">
+<body>
+<header>
+	<div class="wrapper">
+		<div class="headWrapper ">
+			<img class="gg" src="img/menubg.png">
+			<div class="row">
+			<div class="col-md-6 col-xs-12 col-sm-6 log hidden-xs">
+				<img src="img/logo.png" class="imgLogo">
+				<div class="textLogo">Импортер оборудoвания
+				для солнечных систем</div>
+			</div>
+			<div class="col-md-6 col-xs-12 col-sm-6 visible-xs mobLog">
+				<img src="img/logo.png" class="imgLogo">
+				<div class="textLogo">Импортер оборудoвания
+				для солнечных систем</div>
+			</div>
+			<div class="col-md-4 col-xs-12 col-md-offset-6 col-sm-offset-7 col-sm-5">
+				<div class="enter">
+					<div>Формируем дилерскую сеть</div>
+					<button class="dilerEnter popbutton1">Вход для дилеров</button>
+				</div>
+			</div>
+			<div class="  col-md-2 col-sm-7 col-xs-12 col-md-offset-0 col-sm-offset-5 underFind" >
+				<div class="phone">
+					(067) 218-62-76
+					<br>(097) 410-05-07
+					<br>(067) 563-11-11<br>
+					<a href="#" class="popbutton" data-window="1">Перезвоните мне!</a>
+				</div>
+				<form class="visible-sm findBut">
+				<button></button>
+					<input type="text" placeholder="Я ищу">
+				</form>
+				
+			</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row headTool">
+		<form class=" col-md-4 col-xs-12 col-md-offset-5 col-sm-offset-6 hidden-sm mobSearch">
+			<button></button>
+				<input type="text" placeholder="Я ищу">
+		</form>
+		<div class=" col-md-3 col-sm-4 col-xs-12 col-sm-offset-6 col-md-offset-0 ">
+			<div class="mobCart">
+			<div class="basket"><img src="img/basket.png"></div>
+			<div class="shop">
+				Корзина пуста 
+			</div>
+			</div>
+		</div>
+	</div>
+</header>
+	<nav class='menu ' id="cssmenu">
+		<ul>
+		    <li class="col-md-2 col-sm-2"><a href='#'>Готовые <br>решения</a></li>
+		    <li class="col-md-2 col-sm-2"><a href='#'>Наша <br>продукция</a></li>
+		    <li class="col-md-2 col-sm-2"><a href='#'>Реализованные <br>проекты</a></li>
+		    <li class="col-md-2 col-sm-2"><a href='#'>Партнеры <br>и поставщики</a></li>
+			<li class="col-md-2 col-sm-2"><a href='#'>Полезно <br>знать</a></li>
+			<li class="col-md-2 col-sm-2"><a href='#'>Как нас <br>найти</a></li>
+		</ul>
+	</nav>
+
+<main class="main container shop">
+  <div class="descShop col-md-12 visible-xs visible-sm">
+				<div class="title ">Описание</div>
+				<div class="text ">Солнечные панели полностью стандартизированы, и подойдут для любых типов крыш. Предлагаемые инверторы напряжения, аккумуляторные батареи, контроллеры заряда, соединительные коннекторы и другие комплектующие, технически совместимы между собой. Грандиозные планы нашей команды о продвижении на Украине технологий возобновляемой энергетики заслуженно оценены нашими клиентами. Теперь ваш дом получил право на экологически чистую энергию солнечного света.</div>
+	</div>
+	<form class="col-sm-6 selectType">
+		<select>
+			  <option value="volvo">Volvo</option>
+			  <option value="saab">Saab</option>
+			  <option value="mercedes">Mercedes</option>
+			  <option value="audi">Audi</option>
+		</select>
+	  </form>
+  <div class=" col-sm-6 visible-xs visible-sm">
+  <div class="mobfilterico ">
+  Выбор по фильтрам:<img src="img/mobfilters.png">
+  </div>
+  </div>
+  <div style="clear:both;"></div>
+  <div class="filters mobFilter col-sm-6 col-xs-12">
+	<div class="filtersBar mobFilterbar" style="display:none;">
+					<p>Выбор по фильтрам:</p>
+					<div id="slider-range-price" ></div>
+					<div class="filterResult">от <span>1000</span> грн  — до <span>10 000</span> грн</div>
+					<p class="checkBoxName">Наличие</p>
+					<form >
+					   	<fieldset>
+						        <label>Avancis</label><label class="qwert"><input type="checkbox" name="animal" value="Cat" /><span></span></label> <br />
+						        <label>Avancis</label><label class="qwert"><input type="checkbox" name="animal" value="Cat" /><span></span></label> <br />
+					    </fieldset>
+					</form>
+					<p class="checkBoxName">Наличие</p>
+					<form >
+					   	<fieldset>
+						        <label>Avancis</label><label class="qwert"><input type="checkbox" name="animal" value="Cat" /><span></span></label> <br />
+						        <label>Avancis</label><label class="qwert"><input type="checkbox" name="animal" value="Cat" /><span></span></label> <br />
+						        <label>Avancis</label><label class="qwert"><input type="checkbox" name="animal" value="Cat" /><span></span></label> <br />
+						        <label>Avancis</label><label class="qwert"><input type="checkbox" name="animal" value="Cat" /><span></span></label> <br />
+						        <label>Avancis</label><label class="qwert"><input type="checkbox" name="animal" value="Cat" /><span></span></label> <br />
+						        <label>Avancis</label><label class="qwert"><input type="checkbox" name="animal" value="Cat" /><span></span></label> <br />
+						        <label>Avancis</label><label class="qwert"><input type="checkbox" name="animal" value="Cat" /><span></span></label> <br />
+						        <label>Avancis</label><label class="qwert"><input type="checkbox" name="animal" value="Cat" /><span></span></label> <br />
+
+					    </fieldset>
+					</form>
+					<p class="checkBoxName">Наличие</p>
+					<form >
+					   	<fieldset>
+						       	<label>Avancis</label><label class="qwert"><input type="checkbox" name="animal" value="Cat" /><span></span></label> <br />
+						        <label>Avancis</label><label class="qwert"><input type="checkbox" name="animal" value="Cat" /><span></span></label> <br />
+						        <label>Avancis</label><label class="qwert"><input type="checkbox" name="animal" value="Cat" /><span></span></label> <br />
+						        <label>Avancis</label><label class="qwert"><input type="checkbox" name="animal" value="Cat" /><span></span></label> <br />
+						       
+					    </fieldset>
+					</form>
+					<p>Выбор по фильтрам:</p>
+					<div id="slider-range-voltage" ></div>
+					<div class="filterResult">от <span>1000</span> грн  — до <span>10 000</span> грн</div>
+					<p class="checkBoxName">Наличие</p>
+					<form >
+					   	<fieldset>
+						        <label>Avancis</label><label class="qwert"><input type="checkbox" name="animal" value="Cat" /><span></span></label> <br />
+						        <label>Avancis</label><label class="qwert"><input type="checkbox" name="animal" value="Cat" /><span></span></label> <br />
+						        <label>Avancis</label><label class="qwert"><input type="checkbox" name="animal" value="Cat" /><span></span></label> <br />
+						        <label>Avancis</label><label class="qwert"><input type="checkbox" name="animal" value="Cat" /><span></span></label> <br />
+						       
+					    </fieldset>
+					</form>
+					<button class="dilerEnter">применить</button>
+		</div>
+	</div>
+	<div class="row">
+	<section class="contentShop col-md-8 col-sm-12">
+		<div class="row">
+			<div class="col-md-6 col-sm-6">
+				<div class="oneShopItem">
+					<div class="img">
+						<img src="img/sale.jpg">
+					</div>
+					<div class="nameShopItem">
+						Солнечная батарея YINGLI 310Вт / 24В (поликристаллическая) YL310P-35b
+					</div>
+					<div class="shortParam">
+						<p class="bggreen"><span>Производитель:</span>Avancis</p>
+						<p><span>Тип:</span>Поликристалическая</p>
+						<p class="bggreen"><span>Мощность:</span>55 кВт</p>
+					</div>
+					<div class="priceCart">
+					<div class="price">
+						<span class="oldPrice">320$</span><span class="newPrice">300$</span>
+					</div>
+					<div class="cart">
+						<button class="bluBut">подробнее</button><div class="iconCart"><img src="img/basket.png"></div>
+					</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-6">
+				<div class="oneShopItem">
+					<div class="img">
+						<img src="img/sale.jpg">
+					</div>
+					<div class="nameShopItem">
+						Солнечная батарея YINGLI 310Вт / 24В (поликристаллическая) YL310P-35b
+					</div>
+					<div class="shortParam">
+						<p class="bggreen"><span>Производитель:</span>Avancis</p>
+						<p><span>Тип:</span>Поликристалическая</p>
+						<p class="bggreen"><span>Мощность:</span>55 кВт</p>
+					</div>
+					<div class="priceCart">
+					<div class="price">
+						<span class="oldPrice">320$</span><span class="newPrice">300$</span>
+					</div>
+					<div class="cart">
+						<button class="bluBut">подробнее</button><div class="iconCart"><img src="img/basket.png"></div>
+					</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-6">
+				<div class="oneShopItem">
+					<div class="img">
+						<img src="img/sale.jpg">
+					</div>
+					<div class="nameShopItem">
+						Солнечная батарея YINGLI 310Вт / 24В (поликристаллическая) YL310P-35b
+					</div>
+					<div class="shortParam">
+						<p class="bggreen"><span>Производитель:</span>Avancis</p>
+						<p><span>Тип:</span>Поликристалическая</p>
+						<p class="bggreen"><span>Мощность:</span>55 кВт</p>
+					</div>
+					<div class="priceCart">
+					<div class="price">
+						<span class="oldPrice">320$</span><span class="newPrice">300$</span>
+					</div>
+					<div class="cart">
+						<button class="bluBut">подробнее</button><div class="iconCart"><img src="img/basket.png"></div>
+					</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-6">
+				<div class="oneShopItem">
+					<div class="img">
+						<img src="img/sale.jpg">
+					</div>
+					<div class="nameShopItem">
+						Солнечная батарея YINGLI 310Вт / 24В (поликристаллическая) YL310P-35b
+					</div>
+					<div class="shortParam">
+						<p class="bggreen"><span>Производитель:</span>Avancis</p>
+						<p><span>Тип:</span>Поликристалическая</p>
+						<p class="bggreen"><span>Мощность:</span>55 кВт</p>
+					</div>
+					<div class="priceCart">
+					<div class="price">
+						<span class="oldPrice">320$</span><span class="newPrice">300$</span>
+					</div>
+					<div class="cart">
+						<button class="bluBut">подробнее</button><div class="iconCart"><img src="img/basket.png"></div>
+					</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="col-md-12 col-sm-12 col-xs-12 pagination visible-xs visible-sm">
+				<img src="img/leftArrow.png" class="">
+						<a href="#">1</a> <a href="#">2</a> <a href="#">3</a>...<a href="#">6</a>
+				<img src="img/rightArrow.png" class="">
+			</div>
+		</div>
+	</section>
+	<section class="filters col-md-4">
+		<div class="row">
+			<div class="descShop col-md-12 hidden-xs hidden-sm">
+				<div class="title ">Описание</div>
+				<div class="text ">Солнечные панели полностью стандартизированы, и подойдут для любых типов крыш. Предлагаемые инверторы напряжения, аккумуляторные батареи, контроллеры заряда, соединительные коннекторы и другие комплектующие, технически совместимы между собой. Грандиозные планы нашей команды о продвижении на Украине технологий возобновляемой энергетики заслуженно оценены нашими клиентами. Теперь ваш дом получил право на экологически чистую энергию солнечного света.</div>
+			</div>
+			<div class="allFilter hidden-xs col-md-12">
+				<div class="filtersBar hidden-xs hidden-sm">
+					<p>Выбор по фильтрам:</p>
+					<div id="slider-range-price" ></div>
+					<div class="filterResult">от <span>1000</span> грн  — до <span>10 000</span> грн</div>
+					<p class="checkBoxName">Наличие</p>
+					<form >
+					   	<fieldset>
+						        <label>Avancis</label><label class="qwert"><input type="checkbox" name="animal" value="Cat" /><span></span></label> <br />
+						        <label>Avancis</label><label class="qwert"><input type="checkbox" name="animal" value="Cat" /><span></span></label> <br />
+					    </fieldset>
+					</form>
+					<p class="checkBoxName">Наличие</p>
+					<form >
+					   	<fieldset>
+						        <label>Avancis</label><label class="qwert"><input type="checkbox" name="animal" value="Cat" /><span></span></label> <br />
+						        <label>Avancis</label><label class="qwert"><input type="checkbox" name="animal" value="Cat" /><span></span></label> <br />
+						        <label>Avancis</label><label class="qwert"><input type="checkbox" name="animal" value="Cat" /><span></span></label> <br />
+						        <label>Avancis</label><label class="qwert"><input type="checkbox" name="animal" value="Cat" /><span></span></label> <br />
+						        <label>Avancis</label><label class="qwert"><input type="checkbox" name="animal" value="Cat" /><span></span></label> <br />
+						        <label>Avancis</label><label class="qwert"><input type="checkbox" name="animal" value="Cat" /><span></span></label> <br />
+						        <label>Avancis</label><label class="qwert"><input type="checkbox" name="animal" value="Cat" /><span></span></label> <br />
+						        <label>Avancis</label><label class="qwert"><input type="checkbox" name="animal" value="Cat" /><span></span></label> <br />
+
+					    </fieldset>
+					</form>
+					<p class="checkBoxName">Наличие</p>
+					<form >
+					   	<fieldset>
+						       	<label>Avancis</label><label class="qwert"><input type="checkbox" name="animal" value="Cat" /><span></span></label> <br />
+						        <label>Avancis</label><label class="qwert"><input type="checkbox" name="animal" value="Cat" /><span></span></label> <br />
+						        <label>Avancis</label><label class="qwert"><input type="checkbox" name="animal" value="Cat" /><span></span></label> <br />
+						        <label>Avancis</label><label class="qwert"><input type="checkbox" name="animal" value="Cat" /><span></span></label> <br />
+						       
+					    </fieldset>
+					</form>
+					<p>Выбор по фильтрам:</p>
+					<div id="slider-range-voltage" ></div>
+					<div class="filterResult">от <span>1000</span> грн  — до <span>10 000</span> грн</div>
+					<p class="checkBoxName">Наличие</p>
+					<form >
+					   	<fieldset>
+						        <label>Avancis</label><label class="qwert"><input type="checkbox" name="animal" value="Cat" /><span></span></label> <br />
+						        <label>Avancis</label><label class="qwert"><input type="checkbox" name="animal" value="Cat" /><span></span></label> <br />
+						        <label>Avancis</label><label class="qwert"><input type="checkbox" name="animal" value="Cat" /><span></span></label> <br />
+						        <label>Avancis</label><label class="qwert"><input type="checkbox" name="animal" value="Cat" /><span></span></label> <br />
+						       
+					    </fieldset>
+					</form>
+					<button class="dilerEnter">применить</button>
+				</div>
+				</div>
+					<div class="category col-sm-12 col-xs-12">
+							<ul >
+								<li><a href="#">Солнечные батареи</a></li>
+								<li><a href="#">Аккумкляторные батареи</a></li>
+								<li><a href="#">Сетевые инверторы</a></li>
+								<li><a href="#">Автономные инверторы</a></li>
+								<li><a href="#">Контролеры заряда</a></li>
+								<li><a href="#">Соеденительные коннекторы</a></li>
+								<li><a href="#">Гибридные инверторы</a></li>
+							</ul>
+					</div>
+					<div class="calcWrapper col-sm-12 col-xs-12">
+					<h3>Нужна помощь?</h3>
+					<p>Воспользуйтесь калькулятором, чтобы понять, какая электростанция вам нужна.</p>
+
+						<div class="wrapSelectCalc">
+						<div class="selectCalc" style="background:#fff;"><div class="netSys active hidden-xs"></div> Сетевая</div>
+						<div class="selectCalc"><div class="autosys hidden-xs"></div>Гибридная</div>
+						<div class="selectCalc"><div class="hybsys hidden-xs"></div>Автономная</div>
+					</div>
+					<div class="calc">
+						
+						<div style="clear:both;"></div>
+						<div class="question">Какое Ваше среднее потребление электроэнергии в месяц?</div>
+						<div class="consume consumMob"><span class="amount"></span> кВт/месяц</div>
+						<div id="slider-range-min-sm" ></div>
+						<div style="clear:both;"></div>
+						<div class="result">Вам подходит станция мощностью<br><span class="">3</span> кВт/час</div>
+						<div class="resultTable">
+							<p>Рекомендована электростанция №1:</p>
+						 	<table>
+						 	<tbody>
+						 		<tr class="trBg">
+						 			<td>1</td>
+						 			<td><a href="#">Солнечная батарея</a></td>
+						 		
+						 		</tr>
+						 		<tr >
+						 			<td>2</td>
+						 			<td><a href="#">Контроллер заряда</a></td>
+						 			
+						 		</tr>
+						 		<tr class="trBg">
+						 			<td>3</td>
+						 			<td><a href="#">Коннектор</a></td>
+						 			
+						 		</tr>
+						 		<tr>
+						 			<td>4</td>
+						 			<td><a href="#">Сетевой инвертор</a></td>
+						 			
+						 		</tr>
+						 		<tr class="trBg">
+						 			<td>5</td>
+						 			<td><a href="#">Аккумкляторная батарея</a></td>
+						 		
+						 		</tr>
+						 		</tbody>
+						 	</table>
+						 	<a href="#" class="plantLink">Подробнее о станции >></a>
+						</div>
+						<div class="pricePlant">Цена станции: <span>15 000 $</span></div>
+						<div style="clear:both;"></div>
+						<div class="textCenter" >
+						<button class="bluBut col-md-10 col-xs-5">получить консультацию</button>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+	</section>
+	</div>
+	<div class="col-md-12 col-sm-12 col-xs-12 pagination visible-md visible-lg">
+				<img src="img/leftArrow.png" class="">
+						<a href="#">1</a> <a href="#">2</a> <a href="#">3</a>...<a href="#">6</a>
+				<img src="img/rightArrow.png" class="">
+			</div>	
+</main>
+<div style="clear:both;"></div>
+<footer>
+	<div class="footerWrapper">
+		<div class="footer">
+		<div class="row">
+
+			<div class=" col-md-4 col-sm-4 col-xs-12  ">
+			<div class="product" style="margin:0 auto;">
+			<a href="#">Товары отдельно</a>
+				<ul >
+					<li><a href="#">Солнечные батареи</a></li>
+					<li><a href="#">Аккумкляторные батареи</a></li>
+					<li><a href="#">Сетевые инверторы</a></li>
+					<li><a href="#">Автономные инверторы</a></li>
+					<li><a href="#">Контролеры заряда</a></li>
+					<li><a href="#">Соеденительные коннекторы</a></li>
+					<li><a href="#">Гибридные инверторы</a></li>
+				</ul>
+				<a href="#">Готовые решения</a>
+				<a href="#">Акции и скидки</a>
+			</div>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-12 ">
+				<form class="contactUs">
+					<input type="text" size="20" placeholder="Имя">
+					<input type="text" size="20" placeholder="E-mail">
+					<input type="text" size="20" placeholder="Телефон">
+					<textarea placeholder="Введите свой вопрос..."></textarea> 
+					<button class="bluBut">отправить</button>
+				</form>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-12 ">
+				<img src="img/logo.png" class="imgLogo">
+				<span class="phone"><br>(067) 563-11-11 <br>  &nbsp;&nbsp;&nbsp;(067) 218-62-76</span>
+
+				<span class="location">Киево-Святошинский р-н, г. Вишневое, ул. Остапа Вишни 1,  </span>
+				<form class="search">
+					<input type="text" size="20" placeholder="Я ищу...">
+					<div><img src="img/search2.png"></div>
+				</form>
+				<div class="TQG hidden-sm">Разработано командой <a href="http://tqg.com.ua/" target="_blank">"Top quality guys"</a></div>
+			</div>
+			</div>	
+		</div>
+	</div>
+</footer>
+</body>
+</div>
+<div id="1" class="popwindow" data-title="" data-height="300" data-width="400">
+
+	<form class="contactUs">
+	<p>Оставьте свой номер и наш менеджер с Вами свяжется</p>
+		<input type="text" size="20" placeholder="Имя">
+		<input type="text" size="20" placeholder="Телефон">
+		<button class="bluBut">отправить</button>
+	</form>
+</div>
+<div id="2" class="popwindow1" data-title="" data-height="350" data-width="400">
+	<form class="contactUs">
+	<p>Введите данные, что бы войти подсвой аккаунт дилера</p>
+		<input type="text" size="20" placeholder="Логин">
+		<input type="password" size="20" placeholder="Пароль">
+		<button class="bluBut">войти</button>
+		<p>Вы хотите стать нашим дилером?<br>Оставьте заявку и мы с Вами свяжемся</p>
+	<a class="dilersBack" href="#">Оставить заявку</a>
+	</form>
+	<form class="contactUs dilerForm" style="display:none;">
+		<p>Что бы стать дилером оставте свои данные и мы с вами свяжемся для дальнейшего уточнения информации.</p>
+		<input type="text" size="20" placeholder="Имя">
+		<input type="text" size="20" placeholder="Телефон">
+		<input type="text" size="20" placeholder="Е-mail">
+		<button class="bluBut">отправить</button>
+	</form>
+</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+	<script src="js/jquery-ui-1.11.4/jquery-ui.js"></script>
+  	<script src="js/main.js"></script>
+  	<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+</html>

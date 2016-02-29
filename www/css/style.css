@@ -64,7 +64,7 @@ body{
 	text-align: right;
 	margin-top: 10px;
 	    font-size: 16px;
-	font-family: 'Play', sans-serif;
+	font-family: 'PT Sans', sans-serif;
 	font-weight: bold;
 	margin-right: 15px;
 }
@@ -643,7 +643,7 @@ body{
 .calc .bluBut{
 	float: none;
 	width: 260px;
-	margin: 40px 25%;
+	margin: 40px 0%;
 	
 }
 .textCenter{
@@ -919,8 +919,8 @@ body{
 	.findBut input:-ms-input-placeholder {color:#363636;} .findBut textarea::-webkit-input-placeholder {color:#363636;}
 	.findBut textarea::-moz-placeholder {color:#363636;} .findBut textarea:-moz-placeholder {color:#363636;}
 	.findBut textarea:-ms-input-placeholder  {color:#363636;}
-	.shop{
-		margin-left: 25%;
+	.headTool .shop{
+		
 	}
 	.mobCart{
 		width: 185px;
@@ -965,6 +965,10 @@ body{
 	
 	.phone{
 		margin-right: 15px;
+	}
+	.footer .row{
+		max-width: 768px;
+		margin: 0 auto;
 	}
 	
 }
@@ -1451,4 +1455,314 @@ body{
 }
 .oneProduct .media object{
 	margin-top: 30px;
+}
+.shop select {
+	width: 200px;
+	position: relative;
+	margin-top: 20px;
+}
+.shop .oneShopItem{
+	margin-top: 20px;
+	    margin-right: -20px;    
+}
+.shop .oneShopItem .img{
+	background-color: #fff;
+	text-align: center;
+	padding: 30px;
+	padding-bottom: 0;
+}
+.shop .oneShopItem .nameShopItem{
+	background-color: #fff;
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: 'Play', sans-serif;
+	padding:30px;
+}
+.shop .oneShopItem .shortParam{
+	background-color: #fff;
+}
+.shop .oneShopItem .shortParam p{
+	padding: 5px;
+	padding-left:20px;
+	margin:0;
+	font-size: 18px;
+	font-family: 'PT Sans', sans-serif;
+}
+.shop .oneShopItem .shortParam p span{
+	margin-right: 10px;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: 'Play', sans-serif;
+}
+.shop .oneShopItem .shortParam .bggreen{
+	background-color: #e9f6e2;
+	margin:0;
+}
+.shop .oneShopItem .priceCart{
+	background-color: #c8e19d;
+}
+
+.shop .oneShopItem .priceCart .price{
+	text-align: center;
+	padding-top: 30px;
+}
+.shop .oneShopItem .priceCart .cart {
+	text-align: center;
+
+}
+.shop .oneShopItem .priceCart .cart .bluBut{
+	float: none;
+	margin-top: 10px;
+	margin-bottom: 35px;
+}
+.shop .oneShopItem .priceCart .cart .iconCart{
+	    padding: 10px;
+    border-radius: 10px;
+	margin-left: 10px;
+	display: inline-block;
+	    background: -webkit-linear-gradient(bottom, #024150, #2b6072);
+    background: -ms-linear-gradient(bottom, #024150, #2b6072);
+    background: -moz-linear-gradient(bottom, #024150, #2b6072);
+    background: -o-linear-gradient(bottom, #024150, #2b6072);
+    background: linear-gradient(to top, #024150, #2b6072);
+
+}
+.shop .filters  {
+	margin-top: 10px;
+	
+}
+.shop .descShop{
+	margin-top:30px;
+	background-color: #fff;
+}
+.shop .filters .descShop{
+	background-color: inherit;
+	margin-top: 0;
+}
+.shop .descShop .title{
+	    color: #00404e;
+	font-size: 24px;
+	font-weight: bold;
+	font-family: 'Play', sans-serif;
+}
+.shop  .descShop .text{
+	font-size: 18px;
+	font-family: 'PT Sans', sans-serif;
+}
+
+.shop .filters .descShop .title{
+	    color: #00404e;
+	font-size: 24px;
+	font-weight: bold;
+	font-family: 'Play', sans-serif;
+}
+.shop .filters .descShop .text{
+	font-size: 18px;
+	font-family: 'PT Sans', sans-serif;
+}
+.shop .filters .ui-state-default,.shop .filters .ui-widget-content .ui-state-default,.shop .filters .ui-widget-header .ui-state-default{
+	border-radius: 100%;
+	-webkit-border-radius: 100%;
+	-moz-border-radius:100%;
+	background-image:url(../img/scroll.png) !important;
+	  width: 40px !important; 
+    top: -15px !important;
+    height: 40px !important;
+    outline: none;
+}
+.shop .filters .filtersBar {
+	background-color: #fff;
+}
+.shop .allFilter {
+	margin-top: 70px;
+} 
+.shop .filters .filtersBar p{
+	padding-top: 45px;
+	padding-left:30px;
+	padding-bottom: 15px;
+	font-size: 19px;
+	font-weight: bold;
+	font-family: 'Play', sans-serif;
+}
+.shop .filters .filtersBar .filterResult{
+	text-align: center;
+	margin-top: 25px;
+	font-size: 18px;
+	font-family: 'PT Sans', sans-serif;
+}
+.shop .filters .filtersBar .filterResult span{
+	    color: #00404e;
+	font-size: 19px;
+	font-weight: bold;
+	font-family: 'Play', sans-serif;
+	color: 
+}
+.shop .filters .filtersBar #slider-range{
+	    margin-left: 30px;
+}
+.shop .filters .filtersBar {
+	font-size: 18px;
+	font-family: 'PT Sans', sans-serif;
+	text-align:center;
+}
+.shop .filters .checkBoxName{
+	color: #00404e;
+	text-align: left;
+	margin-bottom: 0px;
+    padding-bottom: 10px;
+    padding-top: 25px !important;
+}
+.shop .filters form fieldset input[type="checkbox"]{
+	margin-left: 140px;
+	border: 0;
+	outline: none;
+}
+.shop .filters form fieldset label{
+	font-size: 18px;
+	font-family: 'PT Sans', sans-serif;
+}
+.shop .filters .dilerEnter{
+	margin-top: 50px;
+    margin-bottom: 50px;
+}
+.shop .category ul{
+	list-style: none;
+	padding-left: 0;
+}
+.shop  .category li:first-of-type{
+	margin-top: 30px;
+}
+.shop  .category li{
+	list-style: none;
+	padding-top:20px;
+}
+.shop  .category li a{
+	color: #00404e;
+	text-decoration: underline;
+}
+.shop  .category {
+	font-size:15px;
+	font-weight: bold;
+	font-family: 'Play', sans-serif;
+	padding-left: 30px;
+}
+.shop  .calcWrapper .question{
+	font-size: 18px;
+	font-family: 'PT Sans', sans-serif;
+	text-align: center;
+	margin-bottom: 15px;
+}
+.shop   .consumMob{
+	text-align: center;
+	float: none;
+	margin: 0;
+	font-size: 18px;
+	font-family: 'PT Sans', sans-serif;
+
+}
+.shop  .calcWrapper .result{
+	font-size: 18px;
+	font-family: 'PT Sans', sans-serif;
+	text-align: center;
+	margin: 15px 0;
+	
+}
+.shop  .calcWrapper .resultTable{
+	margin-top: 30px;
+	max-width: 270px;
+}
+.shop  .calcWrapper .pricePlant{
+	float: none;
+	text-align: center;
+	margin: 0;
+}
+.shop  .calcWrapper .bluBut {
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+.shop  .calcWrapper .resultTable p{
+	    text-align: center;
+}
+.shop .filters label {
+ /* Блочный элемент */
+ position: relative; /* Относительное позиционирование */
+}
+.shop .filters input[type="checkbox"] + span {
+ position: absolute; /* Абсолютное позиционирование */
+     left: 140px;
+    top: 2px;
+ width: 18px; height: 18px;
+ background: url(../img/check.png) no-repeat; /* Фоновый рисунок */
+ cursor: pointer; /* Курсор в виде руки */
+}
+.shop .filters input[type="checkbox"]:checked + span  	{
+ background: url(../img/checkk.png) no-repeat;
+}
+.shop .mobfilterico{
+    float: right;
+    font-size: 19px;
+    font-weight: bold;
+	font-family: 'Play', sans-serif;
+	margin-top: 10px;
+}
+.shop .mobfilterico img{
+    margin-left: 10px;
+    border-radius: 10px;
+}
+.selectType{
+	float: left;
+}
+.shop .mobFilter{
+	position: absolute;
+    z-index: 9999;
+    right: 0%;
+}
+.show{
+	display: block;
+}
+
+@media(max-width:992px){
+	.shop .category ul{
+	text-align: center;
+}
+.shop .calcWrapper {
+	margin: 0 auto;
+	text-align: center;
+}
+.shop .wrapSelectCalc{
+	margin: 0 auto;
+}
+.shop .calc{
+	margin: 0 auto;
+}
+}
+@media(min-width:992px){
+	.mobFilterbar{
+		display: none !important;
+	}
+	}
+.shop .pagination {
+	text-align: center;
+	font-family: 'Play', sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+}
+.shop .pagination img:first-of-type{
+	margin-right: 180px;
+	cursor: pointer;
+}
+.shop .pagination img:last-of-type{
+	margin-left: 180px;
+	cursor: pointer;
+}
+@media(max-width:768px){
+	.shop .pagination img:first-of-type{
+	margin-right: 80px;
+	cursor: pointer;
+}
+.shop .pagination img:last-of-type{
+	margin-left: 80px;
+	cursor: pointer;
+}
 }
